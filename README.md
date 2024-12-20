@@ -30,5 +30,4 @@ Percentage of DFF's = Flop Ratio * 100
   <dd>run_synthesis</dd>
 </dl>
 <p>The screenshots of above steps is shown below</p>
-<a href="URL_REDIRECT" target="blank"><img align="center" src="C:\Users\User\Downloads\VSD Workshop New\Capture -1.JPG" /></a>
-![Capture -1](https://github.com/user-attachments/assets/ad1a57a4-e17f-4f29-90d0-cc864f679d79)
+
