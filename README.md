@@ -20,4 +20,15 @@ Percentage of DFF's = Flop Ratio * 100
   <dd>//alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'</dd>
   <dd>//Since we have aliased the long command to 'docker' we can invoke the OpenLANE flow docker sub-system by just running this command</dd>
   <dd>docker</dd>
+  <dd>//Now that we have entered the OpenLANE flow contained docker sub-system we can invoke the OpenLANE flow in the Interactive mode using the following command</dd>
+  <dd>./flow.tcl -interactive</dd>
+  <dd>//Now that OpenLANE flow is open we have to input the required packages for proper functionality of the OpenLANE flow</dd>
+  <dd>package require openlane 0.9</dd>
+  <dd>//Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'</dd>
+  <dd>prep -design picorv32a</dd>
+  <dd>//Now that the design is prepped and ready, we can run synthesis using following command</dd>
+  <dd>run_synthesis</dd>
 </dl>
+<p>The screenshots of above steps is shown below</p>
+<a href="URL_REDIRECT" target="blank"><img align="center" src="C:\Users\User\Downloads\VSD Workshop New\Capture -1.JPG" /></a>
+![Capture -1](https://github.com/user-attachments/assets/ad1a57a4-e17f-4f29-90d0-cc864f679d79)
