@@ -137,3 +137,113 @@ Percentage of DFF's = Flop Ratio * 100
 <h2>Section 3 - Design library cell using Magic Layout and ngspice characterization</h2>
 <h3>Implementation</h3>
 <h4>Task</h4>
+<ol>
+  <li> Clone custom inverter standard cell design from github repository: [Standard cell design and characterization using OpenLANE flow](https://github.com/nickson-jose/vsdstdcelldesign).</li>
+  <li> Load the custom inverter layout in magic and explore.</li>
+  <li> Spice extraction of inverter in magic.</li>
+  <li> Editing the spice model file for analysis through simulation.</li>
+  <li> Post-layout ngspice simulations.</li>
+  <li> Find problem in the DRC section of the old magic tech file for the skywater process and fix them.</li>
+</ol>
+<h4>1. Clone custom inverter standard cell design from github repository</h4>
+<p>Commands to copy inverter standard cell design from github repository is shown below</p>
+<dl>  
+  <dd>//Change directory to openlane</dd>
+  <dd>cd Desktop/work/tools/openlane_working_dir/openlane</dd>
+  <dd>//Clone the repository with custom inverter design</dd>
+  <dd>git clone https://github.com/nickson-jose/vsdstdcelldesign</dd>
+  <dd>//Change into repository directory</dd>
+  <dd>cd vsdstdcelldesign</dd>
+  <dd>//Copy magic tech file to the vsdstdcelldesign directory for easy access</dd>
+  <dd>//Open new terminal and change directory to magic</dd>
+  <dd>cd Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic</dd>
+  <dd>//Now copy file as shown below</dd>
+  <dd>cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign</dd>
+  <dd>//Go back to previous terminal and check whether file is copied or not</dd>
+  <dd>ls -ltr</dd>
+</dl>
+<p>Screenshots of above steps is shown below</p>
+<p>Screenshots of terminal before git clone</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshots of terminal after git clone</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshots of vsdstdcellesign directory before copying tech file</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshots of terminal showing how to copy tech file in vsdstdcelldesign directory</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshots of vsdstdcellesign directory after copying tech file</p>
+<br/>
+<br/>
+<br/>
+<h4>2. Load the custom inverter layout in magic and explore.</h4>
+<p>Command to open custom inverter layout in magic is shown below</p>
+<dl>  
+  <dd>//Command to open custom inverter layout in magic</dd>
+  <dd>magic -T sky130A.tech sky130_inv.mag &</dd>
+</dl>
+<p>Screenshot of custom inverter layout in magic is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of NMOS identified is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of PMOS identified is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of Output Y connectivity to PMOS and NMOS drain verified is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of PMOS source connectivity to VDD (here VPWR) verified is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of NMOS source connectivity to VSS (here VGND) verified is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of Polysilicon identified is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of knowingly Deleted part of layout see DRC error is shown below</p>
+<br/>
+<br/>
+<br/>
+<h4>3. Spice extraction of inverter in magic.</h4>
+<p>Commands for spice extraction of the custom inverter layout to be used in tkcon window of magic is shown below</p>
+<dl>  
+  <dd>//Check current directory</dd>
+  <dd>pwd</dd>
+  <dd>//Extraction command to extract to .ext format</dd>
+  <dd>extract all</dd>
+  <dd>//Before converting ext to spice this command enable the parasitic extraction also</dd>
+  <dd>ext2spice cthresh 0 rthresh 0</dd>
+  <dd>//Converting to ext to spice</dd>
+  <dd>ext2spice</dd>
+</dl>
+<p>Screenshot of tkcon window after running above commands is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot vsdstdcelldesign directory after each command in tkcon window is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of created spice file is shown below</p>
+<br/>
+<br/>
+<br/>
+<h4>4. Editing the spice model file for analysis through simulation.</h4>
+<p>Measuring unit distance in layout grid</p>
