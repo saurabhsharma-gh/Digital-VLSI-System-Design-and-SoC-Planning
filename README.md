@@ -43,6 +43,7 @@ Percentage of DFF's = Flop Ratio * 100
 Flop Ratio = 1613 / 14876  = 0.108429685<br/>
   Percentage of DFF's = 0.108429685 ∗ 100
 </p>
+
 <h2>Section 2 - Good floorplan vs bad floorplan and introduction to library cells.</h2>
 <h3>Implementation</h3>
 <h4>Task</h4>
@@ -134,6 +135,7 @@ Percentage of DFF's = Flop Ratio * 100
 <br/>
 <br/>
 <br/>
+
 <h2>Section 3 - Design library cell using Magic Layout and ngspice characterization</h2>
 <h3>Implementation</h3>
 <h4>Task</h4>
@@ -246,4 +248,272 @@ Percentage of DFF's = Flop Ratio * 100
 <br/>
 <br/>
 <h4>4. Editing the spice model file for analysis through simulation.</h4>
-<p>Measuring unit distance in layout grid</p>
+<p>Measuring unit distance in layout grid as shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Final edited spice file ready for ngspice simulation is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h4>5. Post-layout ngspice simulations.</h4>
+<p>Commands for ngspice simulation is shown below</p>
+<dl>  
+  <dd>//Command to directly load spice file for simulation to ngspice</dd>
+  <dd>ngspice sky130_inv.spice</dd>
+  <dd>//Now that we have entered ngspice with the simulation spice file loaded we just have to load the plot</dd>
+  <dd>plot y vs time a</dd>
+</dl>
+<p>Screenshots of ngspice run is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshots of command to plot graph in ngspice is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of generated plot is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Rise transition time calculation is done as shown below</p>
+<p align="center">
+Rise transition time = Time taken for output to rise to 80% - Time taken for output to rise to 20%
+  20% of output = 0.2 * 3.3V = 660mV
+  80% of output = 0.8 * 3.3V = 2.64V
+</p>
+<p>20% of output screenshot and values of time & voltage is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>80% of output screenshot and values of time & voltage is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p align="center">Rise transition time = </p>
+<p>Fall transition time calculation is done as shown below</p>
+<p align="center">
+Fall transition time = Time taken for output to fall to 20% - Time taken for output to fall to 80%
+  20% of output = 0.2 * 3.3V = 660mV
+  80% of output = 0.8 * 3.3V = 2.64V
+</p>
+<p>20% of output screenshot and values of time & voltage is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>80% of output screenshot and values of time & voltage is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p align="center">Fall transition time = </p>
+<p>Rise cell delay calculation is done as shown below</p>
+<p align="center">
+Rise cell delay = Time taken for output to rise to 50% - Time taken for input to fall to 50%
+  50% of 3.3V = 0.5 * 3.3V = 2.64V
+</p>
+<p>50% of input and output screenshot and values of time & voltage is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p align="center">Rise cell delay = </p>
+<p>Fall cell delay calculation is done as shown below</p>
+<p align="center">
+Fall cell delay = Time taken for output to fall to 50% - Time taken for input to rise to 50%
+  50% of 3.3V = 0.5 * 3.3V = 2.64V
+</p>
+<p>50% of input and output screenshot and values of time & voltage is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p align="center">Fall cell delay = </p>
+<h4>6. Find problem in the DRC section of the old magic tech file for the skywater process and fix them.</h4>
+<p>Commands to download and view the corrupted skywater process magic tech file and associated files to perform drc corrections is shown below</p>
+<dl>  
+  <dd>//Change to home directory</dd>
+  <dd>cd</dd>
+  <dd>//Command to download the lab files</dd>
+  <dd>wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz</dd>
+  <dd>//Since lab file is compressed,so the command to extract it</dd>
+  <dd>tar xfz drc_tests.tgz</dd>
+  <dd>//Change directory into the lab folder</dd>
+  <dd>cd drc_tests</dd>
+  <dd>//List all files and directories present in the current directory</dd>
+  <dd>ls -al</dd>
+  <dd>//Command to view .magicrc file</dd>
+  <dd>gvim .magicrc</dd>
+  <dd>//Command to open magic tool in better graphics</dd>
+  <dd>magic -d XR</dd>
+</dl>
+<p>Link to Sky130 Periphery rules: https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html</p>
+<p>Screenshots of commands run is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Screenshots of Screenshot of .magicrc file is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Screenshots of command "magic -d XR" is shown below</p>
+<br/>
+<br/>
+<br/>
+<b>Incorrectly implemented poly.9 simple rule correction</b>
+<p>Screenshot of poly rules is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Incorrectly implemented poly.9 rule no drc violation even though spacing < 0.48u is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>New commands inserted in sky130A.tech file to update drc is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Commands to run in tkcon window after making changes in "sky130A.tech" file are shown below</p>
+<dl>  
+  <dd>//Loading updated tech file</dd>
+  <dd>tech load sky130A.tech</dd>
+  <dd>//Must re-run drc check to see updated drc errors</dd>
+  <dd>drc check</dd>
+  <dd>//Selecting region displaying the new errors and getting the error messages</dd>
+  <dd>drc why</dd>
+</dl>
+<p>Screenshot of magic window with rule implemented is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<b>Incorrectly implemented difftap.2 simple rule correction</b>
+<p>Screenshot of difftap rules is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Incorrectly implemented difftap.2 rule no drc violation even though spacing < 0.42u is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>New commands inserted in sky130A.tech file to update drc is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Commands to run in tkcon window after making changes in "sky130A.tech" file are shown below</p>
+<dl>  
+  <dd>//Loading updated tech file</dd>
+  <dd>tech load sky130A.tech</dd>
+  <dd>//Must re-run drc check to see updated drc errors</dd>
+  <dd>drc check</dd>
+  <dd>//Selecting region displaying the new errors and getting the error messages</dd>
+  <dd>drc why</dd>
+</dl>
+<p>Screenshot of magic window with rule implemented is shown below</p>
+<br/>
+<br/>
+<br/>
+<b>Incorrectly implemented nwell.4 complex rule correction</b>
+<p>Screenshot of nwell rules is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Incorrectly implemented nwell.4 rule no drc violation even though no tap present in nwell is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>New commands inserted in sky130A.tech file to update drc is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Commands to run in tkcon window after making changes in "sky130A.tech" file are shown below</p>
+<dl>  
+  <dd>//Loading updated tech file</dd>
+  <dd>tech load sky130A.tech</dd>
+  <dd>//Change drc style to drc full</dd>
+  <dd>drc style drc(full)</dd>
+  <dd>//Must re-run drc check to see updated drc errors</dd>
+  <dd>drc check</dd>
+  <dd>//Selecting region displaying the new errors and getting the error messages</dd>
+  <dd>drc why</dd>
+</dl>
+<p>Screenshot of magic window with rule implemented is shown below</p>
+<br/>
+<br/>
+<br/>
+
+<h2>Section 4 - Pre-layout timing analysis and importance of good clock tree</h2>
+<h3>Implementation</h3>
+<h4>Task</h4>
+<ol>
+  <li> Clone custom inverter standard cell design from github repository: [Standard cell design and characterization using OpenLANE flow](https://github.com/nickson-jose/vsdstdcelldesign).</li>
+  <li> Fix up small DRC errors and verify the design is ready to be inserted into our flow.</li>
+  <li> Save the finalized layout with custom name and open it.</li>
+  <li> Generate lef from the layout.</li>
+  <li> Copy the newly generated lef and associated required lib files to 'picorv32a' design 'src' directory.</li>
+  <li> Edit 'config.tcl' to change lib file and add the new extra lef into the openlane flow.</li>
+  <li> Run openlane flow synthesis with newly inserted custom inverter cell.</li>
+  <li> Remove/reduce the newly introduced violations with the introduction of custom inverter cell by modifying design parameters.</li>
+  <li> Once synthesis has accepted our custom inverter we can now run floorplan and placement and verify the cell is accepted in PnR flow.</li>
+  <li> Do Post-Synthesis timing analysis with OpenSTA tool.</li>
+  <li> Make timing ECO fixes to remove all violations.</li>
+  <li> Replace the old netlist with the new netlist generated after timing ECO fix and implement the floorplan, placement and cts.</li>
+  <li> Post-CTS OpenROAD timing analysis.</li>
+  <li> Explore post-CTS OpenROAD timing analysis by removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'.</li>
+</ol>
+<h4>1. Fix up small DRC errors and verify the design is ready to be inserted into our flow.</h4>
+<p>Conditions to be verified before moving forward with custom designed cell layout are shown below</p>
+<dl>  
+  <dd>Condition 1: The input and output ports of the standard cell should lie on the intersection of the vertical and horizontal tracks.</dd>
+  <dd>Condition 2: Width of the standard cell should be odd multiples of the horizontal track pitch.</dd>
+  <dd>Condition 3: Height of the standard cell should be even multiples of the vertical track pitch.</dd>
+</dl>
+<p>Commands to open the custom inverter layout is shown below</p>
+<dl>  
+  <dd>//Change directory to vsdstdcelldesign</dd>
+  <dd>cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign</dd>
+  <dd>//Command to open custom inverter layout in magic</dd>
+  <dd>magic -T sky130A.tech sky130_inv.mag &</dd>
+</dl>
+<p>Screenshot of tracks.info of sky130_fd_sc_hd is shown below</p>
