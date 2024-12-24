@@ -631,3 +631,414 @@ Width of standard cell = 8 * 0.34 = 2.72 um
 <br/>
 <br/>
 <br/>
+<h4>6. Run openlane flow synthesis with newly inserted custom inverter cell.</h4>
+<p>Commands to invoke the OpenLANE flow include new lef and perform synthesis is shown below</p>
+<dl>  
+  <dd>//Change directory to openlane flow directory</dd>
+  <dd>cd Desktop/work/tools/openlane_working_dir/openlane</dd>
+  <dd>//alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'</dd>
+  <dd>//Since we have aliased the long command to 'docker' we can invoke the OpenLANE flow docker sub-system by just running this command</dd>
+  <dd>docker</dd>
+  <dd>//Now that we have entered the OpenLANE flow contained docker sub-system we can invoke the OpenLANE flow in the Interactive mode using the following command</dd>
+  <dd>./flow.tcl -interactive</dd>
+  <dd>//Now that OpenLANE flow is open we have to input the required packages for proper functionality of the OpenLANE flow</dd>
+  <dd>package require openlane 0.9</dd>
+  <dd>//Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'</dd>
+  <dd>prep -design picorv32a -tag ----------------------------------------------------------------------------------- -overwrite</dd>
+  <dd>//Adiitional commands to include newly added lef to openlane flow</dd>
+  <dd>set lefs [glob $::env(DESIGN_DIR)/src/*.lef]</dd>
+  <dd>add_lefs -src $lefs</dd>
+  <dd>//Now that the design is prepped and ready, we can run synthesis using following command</dd>
+  <dd>run_synthesis</dd>
+</dl>
+<p>Screenshot of command run is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h4>7. Remove/reduce the newly introduced violations with the introduction of custom inverter cell by modifying design parameters.</h4>
+<p>Noting down current design values generated before modifying parameters to improve timing is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of merged.lef in tmp directory with our custom inverter as macro is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Comparing to previously noted run values area has increased and worst negative slack has become 0</p>
+<br/>
+<br/>
+<br/>
+<h4>8. Once synthesis has accepted our custom inverter we can now run floorplan and placement and verify the cell is accepted in PnR flow.</h4>
+<p>Now that our custom inverter is properly accepted in synthesis we can now run floorplan using following command</p>
+<dl>  
+  <dd>//Now we can run floorplan</dd>
+  <dd>run_floorplan</dd>
+</dl>
+<p>Screenshots of command run is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Now that our custom inverter is properly accepted in synthesis we can now run floorplan using following command</p>
+<dl>  
+  <dd>//Follwing commands are alltogather sourced in "run_floorplan" command</dd>
+  <dd>init_floorplan</dd>
+  <dd>place_io</dd>
+  <dd>tap_decap_or</dd>
+</dl>
+<p>Screenshots of command run is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Now that floorplan is done we can do placement using following command</p>
+<dl>  
+  <dd>//Now we are ready to run placement</dd>
+  <dd>run_placement</dd>
+</dl>
+<p>Screenshots of command run is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Commands to load placement def in magic in another terminal</p>
+<dl>  
+  <dd>//Change directory to path containing generated placement def</dd>
+  <dd>cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/---------------------------------------------------------------------------/results/placement/</dd>
+  <dd>//Command to load the placement def in magic tool</dd>
+  <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &</dd>
+</dl>
+<p>Screenshot of placement def in magic is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of custom inverter inserted in placement def with proper abutment is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Command for tkcon window to view internal layers of cells</p>
+<dl>  
+  <dd>//Command to view internal connectivity layers</dd>
+  <dd>expand</dd>
+</dl>
+<p>Abutment of power pins with other cell from library clearly visible is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h4>9. Do Post-Synthesis timing analysis with OpenSTA tool.</h4>
+<p>Since we are having 0 wns after improved timing run we will not do Post Synthesis timing analysis</p>
+<p>If we want we can do Post Synthesis timing analysis but for that we will do another synthesis i.e. we will not use previous directory created in runs directory of picorv32a directory.</p>
+<p>We will be creating another synthesis file  because we don't want to disturb our flow till now</p>
+<h4>11. Replace the old netlist with the new netlist generated after timing ECO fix and implement the floorplan, placement and cts.</h4>
+<p>Since we are not doing Post Synthesis timing analysis and we have not created new synthesis file.</p>
+<p>So we don't need to replace new synthesis file with old synthesis file.</p>
+<p>Now, we will continue from CTS</p>
+<dl>  
+  <dd>//Command to run cts</dd>
+  <dd>run_cts</dd>
+</dl>
+<p>Screenshot of cts is shown below</p>
+<br/>
+<br/>
+<br/>
+<h4>12. Post-CTS OpenROAD timing analysis.</h4>
+<p>Commands to be run in OpenLANE flow to do OpenROAD timing analysis with integrated OpenSTA in OpenROAD</p>
+<dl>  
+  <dd>//Command to run OpenROAD tool</dd>
+  <dd>openroad</dd>
+  <dd>//Reading lef file</dd>
+  <dd>read_lef /openLANE_flow/designs/picorv32a/runs/---------------------------------------------------------------------------------------/tmp/merged.lef</dd>
+  <dd>Command to run cts</dd>
+  <dd>//Reading def file</dd>
+  <dd>read_def /openLANE_flow/designs/picorv32a/runs/---------------------------------------------------------------------/results/cts/picorv32a.cts.def</dd>
+  <dd>//Creating an OpenROAD database to work with</dd>
+  <dd>write_db pico_cts.db</dd>
+  <dd>//Loading the created database in OpenROAD</dd>
+  <dd>read_db pico_cts.db</dd>
+  <dd>//Read netlist post CTS</dd>
+  <dd>read_verilog /openLANE_flow/designs/picorv32a/runs/----------------------------------------------------/results/synthesis/picorv32a.synthesis_cts.v</dd>
+  <dd>//Read library for design</dd>
+  <dd>read_liberty $::env(LIB_SYNTH_COMPLETE)</dd>
+  <dd>//Link design and library</dd>
+  <dd>link_design picorv32a</dd>
+  <dd>//Read in the custom sdc we created</dd>
+  <dd>read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc</dd>
+  <dd>//Setting all cloks as propagated clocks</dd>
+  <dd>set_propagated_clock [all_clocks]</dd>
+  <dd>//Check syntax of 'report_checks' command</dd>
+  <dd>help report_checks</dd>
+  <dd>//Generating custom timing report</dd>
+  <dd>report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4</dd>
+  <dd>//Exit to OpenLANE flow</dd>
+  <dd>exit</dd>
+</dl>
+<p>Screenshots of commands run and timing report generated is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h4>13. Explore post-CTS OpenROAD timing analysis by removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'.</h4>
+<p>Commands to be run in OpenLANE flow to do OpenROAD timing analysis after changing CTS_CLK_BUFFER_LIST</p>
+<dl>  
+  <dd>//Checking current value of 'CTS_CLK_BUFFER_LIST'</dd>
+  <dd>echo $::env(CTS_CLK_BUFFER_LIST)</dd>
+    <dd>//Removing 'sky130_fd_sc_hd__clkbuf_1' from the list</dd>
+  <dd>set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]</dd>
+    <dd>//Checking current value of 'CTS_CLK_BUFFER_LIST'</dd>
+  <dd>echo $::env(CTS_CLK_BUFFER_LIST)</dd>
+    <dd>//Checking current value of 'CURRENT_DEF'</dd>
+  <dd>echo $::env(CURRENT_DEF)</dd>
+    <dd>//Setting def as placement def</dd>
+  <dd>set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/------------------------------------------/results/placement/picorv32a.placement.def</dd>
+    <dd>//Run CTS again</dd>
+  <dd>run_cts</dd>
+    <dd>//Checking current value of 'CTS_CLK_BUFFER_LIST'</dd>
+  <dd>echo $::env(CTS_CLK_BUFFER_LIST)</dd>
+    <dd>//Command to run OpenROAD tool</dd>
+  <dd>openroad</dd>
+    <dd>//Reading lef file</dd>
+  <dd>read_lef /openLANE_flow/designs/picorv32a/runs/-----------------------------------------------------------------------------------/tmp/merged.lef</dd>
+    <dd>//Reading def file</dd>
+  <dd>read_def /openLANE_flow/designs/picorv32a/runs/---------------------------------------------------------------------/results/cts/picorv32a.cts.def</dd>
+    <dd>//Creating an OpenROAD database to work with</dd>
+  <dd>write_db pico_cts1.db</dd>
+    <dd>//Loading the created database in OpenROAD</dd>
+  <dd>read_db pico_cts.db</dd>
+    <dd>//Read netlist post CTS</dd>
+  <dd>read_verilog /openLANE_flow/designs/picorv32a/runs/------------------------------------------------------/results/synthesis/picorv32a.synthesis_cts.v</dd>
+    <dd>//Read library for design</dd>
+  <dd>read_liberty $::env(LIB_SYNTH_COMPLETE)</dd>
+    <dd>//Link design and library</dd>
+  <dd>link_design picorv32a</dd>
+    <dd>//Read in the custom sdc we created</dd>
+  <dd>read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc</dd>
+    <dd>//Setting all cloks as propagated clocks</dd>
+  <dd>set_propagated_clock [all_clocks]</dd>
+    <dd>//Generating custom timing report</dd>
+  <dd>report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4</dd>
+    <dd>//Report hold skew</dd>
+  <dd>report_clock_skew -hold</dd>
+    <dd>//Report setup skew</dd>
+  <dd>report_clock_skew -setup</dd>
+      <dd>//Exit to OpenLANE flow</dd>
+  <dd>exit</dd>
+      <dd>//Checking current value of 'CTS_CLK_BUFFER_LIST'</dd>
+  <dd>echo $::env(CTS_CLK_BUFFER_LIST)</dd>
+      <dd>//Inserting 'sky130_fd_sc_hd__clkbuf_1' to first index of list</dd>
+  <dd>set ::env(CTS_CLK_BUFFER_LIST) [linsert $::env(CTS_CLK_BUFFER_LIST) 0 sky130_fd_sc_hd__clkbuf_1]</dd>
+      <dd>//Checking current value of 'CTS_CLK_BUFFER_LIST'</dd>
+  <dd>echo $::env(CTS_CLK_BUFFER_LIST)</dd>
+</dl>
+<p>Screenshots of commands run and timing report generated is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<h2>Section 5 - Final steps for RTL2GDS using tritonRoute and openSTA</h2>
+<h3>Implementation</h3>
+<h4>Task</h4>
+<ol>
+  <li> Perform generation of Power Distribution Network (PDN) and explore the PDN layout.</li>
+  <li> Perfrom detailed routing using TritonRoute.</li>
+  <li> Post-Route parasitic extraction using SPEF extractor.</li>
+  <li> Post-Route OpenSTA timing analysis with the extracted parasitics of the route.</li>
+</ol>
+<h4>1. Perform generation of Power Distribution Network (PDN) and explore the PDN layout.</h4>
+<p>Commands to perform all necessary stages up until now</p>
+<dl>  
+  <dd>//Change directory to openlane flow directory</dd>
+  <dd>cd Desktop/work/tools/openlane_working_dir/openlane</dd>
+    <dd>//alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'</dd>
+    <dd>//Since we have aliased the long command to 'docker' we can invoke the OpenLANE flow docker sub-system by just running this command</dd>
+  <dd>docker</dd>
+    <dd>//Now that we have entered the OpenLANE flow contained docker sub-system we can invoke the OpenLANE flow in the Interactive mode using the following command</dd>
+  <dd>./flow.tcl -interactive</dd>
+    <dd>//Now that OpenLANE flow is open we have to input the required packages for proper functionality of the OpenLANE flow</dd>
+  <dd>package require openlane 0.9</dd>
+    <dd>//Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'</dd>
+  <dd>prep -design picorv32a</dd>
+    <dd>//Addiitional commands to include newly added lef to openlane flow merged.lef</dd>
+  <dd>set lefs [glob $::env(DESIGN_DIR)/src/*.lef]</dd>
+  <dd>add_lefs -src $lefs</dd>
+    <dd>//Command to set new value for SYNTH_STRATEGY</dd>
+  <dd>set ::env(SYNTH_STRATEGY) "DELAY 3"</dd>
+    <dd>//Command to set new value for SYNTH_SIZING</dd>
+  <dd>set ::env(SYNTH_SIZING) 1</dd>
+    <dd>//Now that the design is prepped and ready, we can run synthesis using following command</dd>
+  <dd>run_synthesis</dd>
+    <dd>//Following commands are alltogather sourced in "run_floorplan" command</dd>
+  <dd>init_floorplan</dd>
+  <dd>place_io</dd>
+  <dd>tap_decap_or</dd>
+    <dd>//Now we are ready to run placement</dd>
+  <dd>run_placement</dd>
+    <dd>//Incase getting error</dd>
+  <dd>unset ::env(LIB_CTS)</dd>
+      <dd>//With placement done we are now ready to run CTS</dd>
+  <dd>run_cts</dd>
+      <dd>//Now that CTS is done we can do power distribution network</dd>
+  <dd>gen_pdn</dd>
+</dl>
+<p>Screenshots of power distribution network run is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Commands to load PDN def in magic in another terminal</p>
+<dl>  
+  <dd>//Change directory to path containing generated PDN def</dd>
+  <dd>cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/-----------------------------------------------------------------/tmp/floorplan/</dd>
+  <dd>//Command to load the PDN def in magic tool</dd>
+  <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &</dd>
+</dl>
+<p>Screenshots of PDN def is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h4>2. Perfrom detailed routing using TritonRoute and explore the routed layout.</h4>
+<p>Command to perform routing</p>
+<dl>  
+  <dd>//Check value of 'CURRENT_DEF'</dd>
+  <dd>echo $::env(CURRENT_DEF)</dd>
+    <dd>//Check value of 'ROUTING_STRATEGY'</dd>
+    <dd>echo $::env(ROUTING_STRATEGY)</dd>
+  <dd>//Command for detailed route using TritonRoute</dd>
+    <dd>run_routing</dd>
+</dl>
+<p>Screenshots of routing run is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Commands to load routed def in magic in another terminal</p>
+<dl>  
+  <dd>//Change directory to path containing routed def</dd>
+  <dd>cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/</dd>
+  <dd>//Command to load the routed def in magic tool</dd>
+  <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &</dd>
+</dl>
+<p>Screenshots of routed def is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of fast route guide present in openlane/designs/picorv32a/runs/--------------------------------------------------------------/tmp/routing directory is shown below</p>
+<br/>
+<br/>
+<br/>
+<h4>3. Post-Route parasitic extraction using SPEF extractor.</h4>
+<p>We don't need to follow this step</p>
+<h4>4. Post-Route OpenSTA timing analysis with the extracted parasitics of the route.</h4>
+<p>Commands to be run in OpenLANE flow to do OpenROAD timing analysis with integrated OpenSTA in OpenROAD</p>
+<dl>  
+  <dd>//Command to run OpenROAD tool</dd>
+  <dd>openroad</dd>
+  <dd>//Reading lef file</dd>
+  <dd>read_lef /openLANE_flow/designs/picorv32a/runs/--------------------------------------/tmp/merged.lef</dd>
+    <dd>//Reading def file</dd>
+  <dd>read_def /openLANE_flow/designs/picorv32a/runs/----------------------------/results/routing/picorv32a.def</dd>
+    <dd>//Creating an OpenROAD database to work with</dd>
+  <dd>write_db pico_route.db</dd>
+    <dd>//Loading the created database in OpenROAD</dd>
+  <dd>read_db pico_route.db</dd>
+    <dd>//Read netlist post CTS</dd>
+  <dd>read_verilog /openLANE_flow/designs/picorv32a/runs/--------------------------------------/results/synthesis/picorv32a.synthesis_preroute.v</dd>
+    <dd>//Read library for design</dd>
+  <dd>read_liberty $::env(LIB_SYNTH_COMPLETE)</dd>
+    <dd>//Link design and library</dd>
+  <dd>link_design picorv32a</dd>
+    <dd>//Read in the custom sdc we created</dd>
+  <dd>read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc</dd>
+    <dd>//Setting all cloks as propagated clocks</dd>
+  <dd>set_propagated_clock [all_clocks]</dd> 
+    <dd>//Read SPEF</dd>
+  <dd>read_spef /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.spef</dd>
+      <dd>//Generating custom timing report</dd>
+  <dd>report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4</dd>
+      <dd>//Exit to OpenLANE flow</dd>
+  <dd>exit</dd>
+</dl>
+<p>Screenshots of commands run and timing report generated is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
