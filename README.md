@@ -30,6 +30,7 @@ Percentage of DFF's = Flop Ratio * 100
   <dd>run_synthesis</dd>
 </dl>
 <p>The screenshots of above steps and synthes run is shown below</p>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-1.JPG" alt="Capture -1">
 <br/>
 <br/>
 <br/>
