@@ -516,4 +516,118 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken for input to
   <dd>//Command to open custom inverter layout in magic</dd>
   <dd>magic -T sky130A.tech sky130_inv.mag &</dd>
 </dl>
+<p>Screenshot of sky130_inv.mag is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Open tracks.info file as shown in screenshot below</p>
+<br/>
+<br/>
+<br/>
 <p>Screenshot of tracks.info of sky130_fd_sc_hd is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Commands for tkcon window to set grid as tracks of locali layer</p>
+<dl>  
+  <dd>//Get syntax for grid command</dd>
+  <dd>help grid</dd>
+  <dd>//Set grid values accordingly</dd>
+  <dd>grid 0.46um 0.34um 0.23um 0.17um</dd>
+</dl>
+<p>Screenshot of commands run is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of Condition 1 verified is shown below</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of Condition 2 verified is shown below</p>
+<p align="center">Horizontal track pitch = 0.46 um<br>
+Width of standard cell = 3 * 0.46 = 138 um
+</p>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of Condition 3 verified is shown below</p>
+<p align="center">Horizontal track pitch = 0.34 um<br>
+Width of standard cell = 8 * 0.34 = 2.72 um
+</p>
+<br/>
+<br/>
+<br/>
+<h4>2. Save the finalized layout with custom name and open it.</h4>
+<p>Command for tkcon window to save the layout with custom name is shown below</p>
+<dl>  
+  <dd>//Command to save as</dd>
+  <dd>save sky130_vsdinv.mag</dd>
+</dl>
+<p>Screenshot of tkcon window and terminal with new file created is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Command to open the newly saved layout is shown below</p>
+<dl>  
+  <dd>//Command to open custom inverter layout in magic</dd>
+  <dd>magic -T sky130A.tech sky130_vsdinv.mag &</dd>
+</dl>
+<p>Screenshot of newly saved layout is shown below</p>
+<br/>
+<br/>
+<br/>
+<h4>3. Generate lef from the layout.</h4>
+<p>Command for tkcon window to write lef is shown below</p>
+<dl>  
+  <dd>//lef command</dd>
+  <dd>lef write</dd>
+</dl>
+<p>Screenshot of command run and terminal with new lef file created is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>Screenshot of newly created file is shown below</p>
+<br/>
+<br/>
+<br/>
+<h4>4. Copy the newly generated lef and associated required lib files to 'picorv32a' design 'src' directory.</h4>
+<p>Commands to copy necessary files to 'picorv32a' design 'src' directory is shown below</p>
+<dl>  
+  <dd>//Copy lef file</dd>
+  <dd>cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/</dd>
+  <dd>//List and check whether it's copied</dd>
+  <dd>ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/</dd>
+  <dd>//Copy lib files</dd>
+  <dd>cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/</dd>
+  <dd>//List and check whether it's copied</dd>
+  <dd>ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/</dd>
+</dl>
+<p>Screenshot of commands run is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h4>5. Edit 'config.tcl' to change lib file and add the new extra lef into the openlane flow.</h4>
+<p>Commands to be added to config.tcl to include our custom cell in the openlane flow is shown below</p>
+<dl>  
+  <dd>set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"</dd>
+  <dd>set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"</dd>
+  <dd>set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"</dd>
+  <dd>set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"</dd>
+  <dd>set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]</dd>
+</dl>
+<p>Edited config.tcl to include the added lef and change library to ones we added in src directory is shown below</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
