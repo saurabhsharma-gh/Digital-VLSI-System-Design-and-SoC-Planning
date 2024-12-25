@@ -39,18 +39,14 @@ Percentage of DFF's = Flop Ratio * 100
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-7.JPG" alt="Capture -7">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-8.JPG" alt="Capture -8">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-13.JPG" alt="Capture -13">
-<br/>
-<br/>
-<br/>
+
 <h4>2. Calculate the flop ratio.</h4>
 <p>Screenshots of synthesis statistics report file with required values highlighted is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-9.JPG" alt="Capture -9">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-10.JPG" alt="Capture -10">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-11.JPG" alt="Capture -11">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-12.JPG" alt="Capture -12">
-<br/>
-<br/>
-<br/>
+
 <p>Calculation of Flop Ratio and DFF % from synthesis statistics report file</p>
 <p align="center">
 Flop Ratio = 1613 / 14876  = 0.108429685<br/>
@@ -79,15 +75,11 @@ Area of Die in microns = Die width in microns * Die height in microns
 <p>Screenshots of floorplan run is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-14.JPG" alt="Capture -14">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-15.JPG" alt="Capture -15">
-<br/>
-<br/>
-<br/>
+
 <h4>2. Calculate the die area in microns from the values in floorplan def.</h4>
 <p>Screenshots of contents of floorplan def is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-16.JPG" alt="Capture -16">
-<br/>
-<br/>
-<br/>
+
 <p>According to floorplan def</p>
 <p align="center">
 1000 Unit Distance = 1 Micron<br/>
@@ -108,40 +100,26 @@ Distance in microns = Value in unit distance / 1000<br/>
 </dl>
 <p>Screenshots of terminal is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-17.JPG" alt="Capture -17">
-<br/>
-<br/>
-<br/>
+
 <p>Screenshots of floorplan def in magic is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-18.JPG" alt="Capture -18">
-<br/>
-<br/>
-<br/>
+
 <p>Screenshots of Equidistant placement of ports is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-19.JPG" alt="Capture -19">
-<br/>
-<br/>
-<br/>
+
 <p>Screenshots of Port layer as set through config.tcl is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-20.JPG" alt="Capture -20">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-21.JPG" alt="Capture -21">
-<br/>
-<br/>
-<br/>
+
 <p>Screenshots of Decap Cells and Tap Cells is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-22.JPG" alt="Capture -22">
-<br/>
-<br/>
-<br/>
+
 <p>Screenshots of Diogonally equidistant Tap cells is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-23.JPG" alt="Capture -23">
-<br/>
-<br/>
-<br/>
+
 <p>Screenshots of Unplaced standard cells at the origin is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-24.JPG" alt="Capture -24">
-<br/>
-<br/>
-<br/>
+
 <h4>4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.</h4>
 <p>Command to run placement</p>
 <dl>  
@@ -151,9 +129,7 @@ Distance in microns = Value in unit distance / 1000<br/>
 <p>Screenshots of placement run is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-25.JPG" alt="Capture -25">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-26.JPG" alt="Capture -26">
-<br/>
-<br/>
-<br/>
+
 <h4>5. Load generated placement def in magic tool and explore the placement.</h4>
 <p>Commands to load placement def in magic in another terminal is shown below</p>
 <dl>  
@@ -165,14 +141,10 @@ Distance in microns = Value in unit distance / 1000<br/>
 <p>Screenshots of floorplan def in magic is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-27.JPG" alt="Capture -27">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-28.JPG" alt="Capture -28">
-<br/>
-<br/>
-<br/>
+
 <p>Standard cells legally placed is shown below</p>
-<img src="" alt="Capture -29">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-29.JPG" alt="Capture -29">
+
 
 <h2>Section 3 - Design library cell using Magic Layout and ngspice characterization</h2>
 <h3>Implementation</h3>
@@ -204,30 +176,20 @@ Distance in microns = Value in unit distance / 1000<br/>
 </dl>
 <p>Screenshots of above steps is shown below</p>
 <p>Screenshots of terminal before git clone</p>
-<img src="" alt="Capture -30">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-30.JPG" alt="Capture -30">
+
 <p>Screenshots of terminal after git clone</p>
-<img src="" alt="Capture -31">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-31.JPG" alt="Capture -31">
+
 <p>Screenshots of vsdstdcellesign directory before copying tech file</p>
-<img src="" alt="Capture -32">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-32.JPG" alt="Capture -32">
+
 <p>Screenshots of terminal showing how to copy tech file in vsdstdcelldesign directory</p>
-<img src="" alt="Capture -33">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-33.JPG" alt="Capture -33">
+
 <p>Screenshots of vsdstdcellesign directory after copying tech file</p>
-<img src="" alt="Capture -34">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-34.JPG" alt="Capture -34">
+
 <h4>2. Load the custom inverter layout in magic and explore.</h4>
 <p>Command to open custom inverter layout in magic is shown below</p>
 <dl>  
@@ -235,45 +197,29 @@ Distance in microns = Value in unit distance / 1000<br/>
   <dd>magic -T sky130A.tech sky130_inv.mag &</dd>
 </dl>
 <p>Screenshot of custom inverter layout in magic is shown below</p>
-<img src="" alt="Capture -35">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-35.JPG" alt="Capture -35">
+
 <p>Screenshot of NMOS identified is shown below</p>
-<img src="" alt="Capture -36">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-36.JPG" alt="Capture -36">
+
 <p>Screenshot of PMOS identified is shown below</p>
-<img src="" alt="Capture -37">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-37.JPG" alt="Capture -37">
+
 <p>Screenshot of Output Y connectivity to PMOS and NMOS drain verified is shown below</p>
-<img src="" alt="Capture -38">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-38.JPG" alt="Capture -38">
+
 <p>Screenshot of PMOS source connectivity to VDD (here VPWR) verified is shown below</p>
-<img src="" alt="Capture -39">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-39.JPG" alt="Capture -39">
+
 <p>Screenshot of NMOS source connectivity to VSS (here VGND) verified is shown below</p>
-<img src="" alt="Capture -40">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-40.JPG" alt="Capture -40">
+
 <p>Screenshot of Polysilicon identified is shown below</p>
-<img src="" alt="Capture -41">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-41.JPG" alt="Capture -41">
+
 <p>Screenshot of knowingly Deleted part of layout see DRC error is shown below</p>
-<img src="" alt="Capture -42">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-42.JPG" alt="Capture -42">
+
 <h4>3. Spice extraction of inverter in magic.</h4>
 <p>Commands for spice extraction of the custom inverter layout to be used in tkcon window of magic is shown below</p>
 <dl>  
@@ -287,35 +233,22 @@ Distance in microns = Value in unit distance / 1000<br/>
   <dd>ext2spice</dd>
 </dl>
 <p>Screenshot of tkcon window after running above commands is shown below</p>
-<img src="" alt="Capture -43">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-43.JPG" alt="Capture -43">
+
 <p>Screenshot vsdstdcelldesign directory after each command in tkcon window is shown below</p>
-<img src="" alt="Capture -44">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-44.JPG" alt="Capture -44">
+
 <p>Screenshot of created spice file is shown below</p>
-<img src="" alt="Capture -45">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-45.JPG" alt="Capture -45">
+
 <h4>4. Editing the spice model file for analysis through simulation.</h4>
 <p>Measuring unit distance in layout grid as shown below</p>
-<img src="" alt="Capture -46">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-46.JPG" alt="Capture -46">
+
 <p>Final edited spice file ready for ngspice simulation is shown below</p>
-<img src="" alt="Capture -47">
-<img src="" alt="Capture -48">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-47.JPG" alt="Capture -47">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-48.JPG" alt="Capture -48">
+
 <h4>5. Post-layout ngspice simulations.</h4>
 <p>Commands for ngspice simulation is shown below</p>
 <dl>  
@@ -325,20 +258,14 @@ Distance in microns = Value in unit distance / 1000<br/>
   <dd>plot y vs time a</dd>
 </dl>
 <p>Screenshots of ngspice run is shown below</p>
-<img src="" alt="Capture -49">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-49.JPG" alt="Capture -49">
+
 <p>Screenshots of command to plot graph in ngspice is shown below</p>
-<img src="" alt="Capture -50">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-50.JPG" alt="Capture -50">
+
 <p>Screenshot of generated plot is shown below</p>
-<img src="" alt="Capture -51">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-51.JPG" alt="Capture -51">
+
 <p>Rise transition time calculation is done as shown below</p>
 <p align="center">
 Rise transition time = Time taken for output to rise to 80% - Time taken for output to rise to 20%
@@ -346,23 +273,13 @@ Rise transition time = Time taken for output to rise to 80% - Time taken for out
   80% of output = 0.8 * 3.3V = 2.64V
 </p>
 <p>20% of output screenshot and values of time & voltage is shown below</p>
-<img src="" alt="Capture -52">
-<img src="" alt="Capture -53">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-52.JPG" alt="Capture -52">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-53.JPG" alt="Capture -53">
+
 <p>80% of output screenshot and values of time & voltage is shown below</p>
-<img src="" alt="Capture -54">
-<img src="" alt="Capture -55">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-54.JPG" alt="Capture -54">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-55.JPG" alt="Capture -55">
+
 <p align="center">Rise transition time = 2.2458 - 2.18197 = 0.06383 ns </p>
 <p>Fall transition time calculation is done as shown below</p>
 <p align="center">
@@ -371,23 +288,13 @@ Fall transition time = Time taken for output to fall to 20% - Time taken for out
   80% of output = 0.8 * 3.3V = 2.64V
 </p>
 <p>20% of output screenshot and values of time & voltage is shown below</p>
-<img src="" alt="Capture -56">
-<img src="" alt="Capture -57">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-56.JPG" alt="Capture -56">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-57.JPG" alt="Capture -57">
+
 <p>80% of output screenshot and values of time & voltage is shown below</p>
-<img src="" alt="Capture -58">
-<img src="" alt="Capture -59">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-58.JPG" alt="Capture -58">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-59.JPG" alt="Capture -59">
+
 <p align="center">Fall transition time = 4.09512 - 4.05258 = 0.04254 ns</p>
 <p>Rise cell delay calculation is done as shown below</p>
 <p align="center">
@@ -395,14 +302,9 @@ Rise cell delay = Time taken for output to rise to 50% - Time taken for input to
   50% of 3.3V = 0.5 * 3.3V = 2.64V
 </p>
 <p>50% of input and output screenshot and values of time & voltage is shown below</p>
-<img src="" alt="Capture -60">
-<img src="" alt="Capture -61">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-60.JPG" alt="Capture -60">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-61.JPG" alt="Capture -61">
+
 <p align="center">Rise cell delay = 2.21091 - 2.15009 = 0.06082 ns </p>
 <p>Fall cell delay calculation is done as shown below</p>
 <p align="center">
@@ -410,14 +312,9 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken for input to
   50% of 3.3V = 0.5 * 3.3V = 2.64V
 </p>
 <p>50% of input and output screenshot and values of time & voltage is shown below</p>
-<img src="" alt="Capture -62">
-<img src="" alt="Capture -63">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-62.JPG" alt="Capture -62">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-63.JPG" alt="Capture -63">
+
 <p align="center">Fall cell delay = 4.00763 - 4.05006 = 0.02757 ns</p>
 <h4>6. Find problem in the DRC section of the old magic tech file for the skywater process and fix them.</h4>
 <p>Commands to download and view the corrupted skywater process magic tech file and associated files to perform drc corrections is shown below</p>
@@ -439,58 +336,29 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken for input to
 </dl>
 <p>Link to Sky130 Periphery rules: https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html</p>
 <p>Screenshots of commands run is shown below</p>
-<img src="" alt="Capture -64">
-<img src="" alt="Capture -65">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-64.JPG" alt="Capture -64">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-65.JPG" alt="Capture -65">
+
 <p>Screenshots of Screenshot of .magicrc file is shown below</p>
-<img src="" alt="Capture -66">
-<img src="" alt="Capture -67">
-<img src="" alt="Capture -68">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-66.JPG" alt="Capture -66">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-67.JPG" alt="Capture -67">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-68.JPG" alt="Capture -68">
+
 <p>Screenshots of command "magic -d XR" is shown below</p>
-<img src="" alt="Capture -69">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-69.JPG" alt="Capture -69">
+
 <b>Incorrectly implemented poly.9 simple rule correction</b>
 <p>Screenshot of poly rules is shown below</p>
 <img src="" alt="Capture -70">
-<br/>
-<br/>
-<br/>
+
 <p>Incorrectly implemented poly.9 rule no drc violation even though spacing < 0.48u is shown below</p>
 <img src="" alt="Capture -71">
 <img src="" alt="Capture -72">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <p>New commands inserted in sky130A.tech file to update drc is shown below</p>
 <img src="" alt="Capture -73">
 <img src="" alt="Capture -74">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <p>Commands to run in tkcon window after making changes in "sky130A.tech" file are shown below</p>
 <dl>  
   <dd>//Loading updated tech file</dd>
