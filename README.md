@@ -1252,3 +1252,13 @@ Capture -178
 <br/>
 <br/>
 <br/>
+<h2>Certificate</h2>
+<br/>
+<br/>
+<br/>
+<h2>Acknowledgements</h2>
+<ul>
+  <li> Kunal Ghosh : Co-founder, VSD Corp. Pvt. Ltd.</li>
+  <li> Nickson P Jose : Physical Design Engineer, Intel Corporation</li>
+  <li> R Timothy Edwards : Senior Vice President of Analog and Design, efabless Corporation</li>
+</ul>
