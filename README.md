@@ -77,14 +77,14 @@ Area of Die in microns = Die width in microns * Die height in microns
   <dd>run_floorplan</dd>
 </dl>
 <p>Screenshots of floorplan run is shown below</p>
-<img src="" alt="Capture -14">
-<img src="" alt="Capture -15">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-14.JPG" alt="Capture -14">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-15.JPG" alt="Capture -15">
 <br/>
 <br/>
 <br/>
 <h4>2. Calculate the die area in microns from the values in floorplan def.</h4>
 <p>Screenshots of contents of floorplan def is shown below</p>
-<img src="" alt="Capture -16">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-16.JPG" alt="Capture -16">
 <br/>
 <br/>
 <br/>
@@ -107,38 +107,38 @@ Distance in microns = Value in unit distance / 1000<br/>
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &</dd>
 </dl>
 <p>Screenshots of terminal is shown below</p>
-<img src="" alt="Capture -17">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-17.JPG" alt="Capture -17">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of floorplan def in magic is shown below</p>
-<img src="" alt="Capture -18">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-18.JPG" alt="Capture -18">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of Equidistant placement of ports is shown below</p>
-<img src="" alt="Capture -19">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-19.JPG" alt="Capture -19">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of Port layer as set through config.tcl is shown below</p>
-<img src="" alt="Capture -20">
-<img src="" alt="Capture -21">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-20.JPG" alt="Capture -20">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-21.JPG" alt="Capture -21">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of Decap Cells and Tap Cells is shown below</p>
-<img src="" alt="Capture -22">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-22.JPG" alt="Capture -22">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of Diogonally equidistant Tap cells is shown below</p>
-<img src="" alt="Capture -23">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-23.JPG" alt="Capture -23">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of Unplaced standard cells at the origin is shown below</p>
-<img src="" alt="Capture -24">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-24.JPG" alt="Capture -24">
 <br/>
 <br/>
 <br/>
@@ -149,8 +149,8 @@ Distance in microns = Value in unit distance / 1000<br/>
   <dd>run_placement</dd>
 </dl>
 <p>Screenshots of placement run is shown below</p>
-<img src="" alt="Capture -25">
-<img src="" alt="Capture -26">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-25.JPG" alt="Capture -25">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-26.JPG" alt="Capture -26">
 <br/>
 <br/>
 <br/>
@@ -163,8 +163,8 @@ Distance in microns = Value in unit distance / 1000<br/>
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &</dd>
 </dl>
 <p>Screenshots of floorplan def in magic is shown below</p>
-<img src="" alt="Capture -27">
-<img src="" alt="Capture -28">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-27.JPG" alt="Capture -27">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-28.JPG" alt="Capture -28">
 <br/>
 <br/>
 <br/>
@@ -204,27 +204,27 @@ Distance in microns = Value in unit distance / 1000<br/>
 </dl>
 <p>Screenshots of above steps is shown below</p>
 <p>Screenshots of terminal before git clone</p>
-Capture -30
+<img src="" alt="Capture -30">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of terminal after git clone</p>
-Capture -31
+<img src="" alt="Capture -31">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of vsdstdcellesign directory before copying tech file</p>
-Capture -32
+<img src="" alt="Capture -32">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of terminal showing how to copy tech file in vsdstdcelldesign directory</p>
-Capture -33
+<img src="" alt="Capture -33">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of vsdstdcellesign directory after copying tech file</p>
-Capture -34
+<img src="" alt="Capture -34">
 <br/>
 <br/>
 <br/>
@@ -235,42 +235,42 @@ Capture -34
   <dd>magic -T sky130A.tech sky130_inv.mag &</dd>
 </dl>
 <p>Screenshot of custom inverter layout in magic is shown below</p>
-Capture -35
+<img src="" alt="Capture -35">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of NMOS identified is shown below</p>
-Capture -36
+<img src="" alt="Capture -36">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of PMOS identified is shown below</p>
-Capture -37
+<img src="" alt="Capture -37">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of Output Y connectivity to PMOS and NMOS drain verified is shown below</p>
-Capture -38
+<img src="" alt="Capture -38">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of PMOS source connectivity to VDD (here VPWR) verified is shown below</p>
-Capture -39
+<img src="" alt="Capture -39">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of NMOS source connectivity to VSS (here VGND) verified is shown below</p>
-Capture -40
+<img src="" alt="Capture -40">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of Polysilicon identified is shown below</p>
-Capture -41
+<img src="" alt="Capture -41">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of knowingly Deleted part of layout see DRC error is shown below</p>
-Capture -42
+<img src="" alt="Capture -42">
 <br/>
 <br/>
 <br/>
@@ -287,29 +287,29 @@ Capture -42
   <dd>ext2spice</dd>
 </dl>
 <p>Screenshot of tkcon window after running above commands is shown below</p>
-Capture -43
+<img src="" alt="Capture -43">
 <br/>
 <br/>
 <br/>
 <p>Screenshot vsdstdcelldesign directory after each command in tkcon window is shown below</p>
-Capture -44
+<img src="" alt="Capture -44">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of created spice file is shown below</p>
-Capture -45
+<img src="" alt="Capture -45">
 <br/>
 <br/>
 <br/>
 <h4>4. Editing the spice model file for analysis through simulation.</h4>
 <p>Measuring unit distance in layout grid as shown below</p>
-Capture -46
+<img src="" alt="Capture -46">
 <br/>
 <br/>
 <br/>
 <p>Final edited spice file ready for ngspice simulation is shown below</p>
-Capture- 47
-Capture -48
+<img src="" alt="Capture -47">
+<img src="" alt="Capture -48">
 <br/>
 <br/>
 <br/>
@@ -325,17 +325,17 @@ Capture -48
   <dd>plot y vs time a</dd>
 </dl>
 <p>Screenshots of ngspice run is shown below</p>
-Capture -49
+<img src="" alt="Capture -49">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of command to plot graph in ngspice is shown below</p>
-Capture -50
+<img src="" alt="Capture -50">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of generated plot is shown below</p>
-Capture -51
+<img src="" alt="Capture -51">
 <br/>
 <br/>
 <br/>
@@ -346,8 +346,8 @@ Rise transition time = Time taken for output to rise to 80% - Time taken for out
   80% of output = 0.8 * 3.3V = 2.64V
 </p>
 <p>20% of output screenshot and values of time & voltage is shown below</p>
-Capture -52
-Capture -53
+<img src="" alt="Capture -52">
+<img src="" alt="Capture -53">
 <br/>
 <br/>
 <br/>
@@ -355,8 +355,8 @@ Capture -53
 <br/>
 <br/>
 <p>80% of output screenshot and values of time & voltage is shown below</p>
-Capture -54
-Capture -55
+<img src="" alt="Capture -54">
+<img src="" alt="Capture -55">
 <br/>
 <br/>
 <br/>
@@ -371,8 +371,8 @@ Fall transition time = Time taken for output to fall to 20% - Time taken for out
   80% of output = 0.8 * 3.3V = 2.64V
 </p>
 <p>20% of output screenshot and values of time & voltage is shown below</p>
-Capture -56
-Capture -57
+<img src="" alt="Capture -56">
+<img src="" alt="Capture -57">
 <br/>
 <br/>
 <br/>
@@ -380,8 +380,8 @@ Capture -57
 <br/>
 <br/>
 <p>80% of output screenshot and values of time & voltage is shown below</p>
-Capture -58
-Capture -59
+<img src="" alt="Capture -58">
+<img src="" alt="Capture -59">
 <br/>
 <br/>
 <br/>
@@ -395,8 +395,8 @@ Rise cell delay = Time taken for output to rise to 50% - Time taken for input to
   50% of 3.3V = 0.5 * 3.3V = 2.64V
 </p>
 <p>50% of input and output screenshot and values of time & voltage is shown below</p>
-Capture -60
-Capture -61
+<img src="" alt="Capture -60">
+<img src="" alt="Capture -61">
 <br/>
 <br/>
 <br/>
@@ -410,8 +410,8 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken for input to
   50% of 3.3V = 0.5 * 3.3V = 2.64V
 </p>
 <p>50% of input and output screenshot and values of time & voltage is shown below</p>
-Capture -62
-Capture -63
+<img src="" alt="Capture -62">
+<img src="" alt="Capture -63">
 <br/>
 <br/>
 <br/>
@@ -439,8 +439,8 @@ Capture -63
 </dl>
 <p>Link to Sky130 Periphery rules: https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html</p>
 <p>Screenshots of commands run is shown below</p>
-Capture -64
-Capture -65
+<img src="" alt="Capture -64">
+<img src="" alt="Capture -65">
 <br/>
 <br/>
 <br/>
@@ -448,9 +448,9 @@ Capture -65
 <br/>
 <br/>
 <p>Screenshots of Screenshot of .magicrc file is shown below</p>
-Capture -66
-Capture -67
-Capture -68
+<img src="" alt="Capture -66">
+<img src="" alt="Capture -67">
+<img src="" alt="Capture -68">
 <br/>
 <br/>
 <br/>
@@ -461,19 +461,19 @@ Capture -68
 <br/>
 <br/>
 <p>Screenshots of command "magic -d XR" is shown below</p>
-Capture -69
+<img src="" alt="Capture -69">
 <br/>
 <br/>
 <br/>
 <b>Incorrectly implemented poly.9 simple rule correction</b>
 <p>Screenshot of poly rules is shown below</p>
-Capture -70
+<img src="" alt="Capture -70">
 <br/>
 <br/>
 <br/>
 <p>Incorrectly implemented poly.9 rule no drc violation even though spacing < 0.48u is shown below</p>
-Capture -71
-Capture -72
+<img src="" alt="Capture -71">
+<img src="" alt="Capture -72">
 <br/>
 <br/>
 <br/>
@@ -481,8 +481,8 @@ Capture -72
 <br/>
 <br/>
 <p>New commands inserted in sky130A.tech file to update drc is shown below</p>
-Capture -73
-Capture -74
+<img src="" alt="Capture -73">
+<img src="" alt="Capture -74">
 <br/>
 <br/>
 <br/>
@@ -501,8 +501,8 @@ Capture -74
   <dd>drc why</dd>
 </dl>
 <p>Screenshot of magic window with rule implemented is shown below</p>
-Capture -75
-Capture -76
+<img src="" alt="Capture -75">
+<img src="" alt="Capture -76">
 <br/>
 <br/>
 <br/>
@@ -511,17 +511,17 @@ Capture -76
 <br/>
 <b>Incorrectly implemented difftap.2 simple rule correction</b>
 <p>Screenshot of difftap rules is shown below</p>
-Capture -77
+<img src="" alt="Capture -77">
 <br/>
 <br/>
 <br/>
 <p>Incorrectly implemented difftap.2 rule no drc violation even though spacing < 0.42u is shown below</p>
-Capture -78
+<img src="" alt="Capture -78">
 <br/>
 <br/>
 <br/>
 <p>New commands inserted in sky130A.tech file to update drc is shown below</p>
-Capture -79
+<img src="" alt="Capture -79">
 <br/>
 <br/>
 <br/>
@@ -535,19 +535,19 @@ Capture -79
   <dd>drc why</dd>
 </dl>
 <p>Screenshot of magic window with rule implemented is shown below</p>
-Capture -80
+<img src="" alt="Capture -80">
 <br/>
 <br/>
 <br/>
 <b>Incorrectly implemented nwell.4 complex rule correction</b>
 <p>Screenshot of nwell rules is shown below</p>
-Capture -81
+<img src="" alt="Capture -81">
 <br/>
 <br/>
 <br/>
 <p>Incorrectly implemented nwell.4 rule no drc violation even though no tap present in nwell is shown below</p>
-Capture -82
-Capture -83
+<img src="" alt="Capture -82">
+<img src="" alt="Capture -83">
 <br/>
 <br/>
 <br/>
@@ -555,8 +555,8 @@ Capture -83
 <br/>
 <br/>
 <p>New commands inserted in sky130A.tech file to update drc is shown below</p>
-Capture -84
-Capture -85
+<img src="" alt="Capture -84">
+<img src="" alt="Capture -85">
 <br/>
 <br/>
 <br/>
@@ -575,7 +575,7 @@ Capture -85
   <dd>drc why</dd>
 </dl>
 <p>Screenshot of magic window with rule implemented is shown below</p>
-Capture -86
+<img src="" alt="Capture -86">
 <br/>
 <br/>
 <br/>
@@ -614,17 +614,17 @@ Capture -86
   <dd>magic -T sky130A.tech sky130_inv.mag &</dd>
 </dl>
 <p>Screenshot of sky130_inv.mag is shown below</p>
-Capture -87
+<img src="" alt="Capture -87">
 <br/>
 <br/>
 <br/>
 <p>Open tracks.info file as shown in screenshot below</p>
-Capture -88
+<img src="" alt="Capture -88">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of tracks.info of sky130_fd_sc_hd is shown below</p>
-Capture -89
+<img src="" alt="Capture -89">
 <br/>
 <br/>
 <br/>
@@ -636,19 +636,19 @@ Capture -89
   <dd>grid 0.46um 0.34um 0.23um 0.17um</dd>
 </dl>
 <p>Screenshot of commands run is shown below</p>
-Capture -90
+<img src="" alt="Capture -90">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of Condition 1 verified is shown below</p>
-Capture -91
+<img src="" alt="Capture -91">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of Condition 2 verified is shown below</p>
 <p align="center">Horizontal track pitch = 0.46 um<br>
 Width of standard cell = 3 * 0.46 = 138 um
-Capture -92
+<img src="" alt="Capture -92">
 </p>
 <br/>
 <br/>
@@ -656,7 +656,7 @@ Capture -92
 <p>Screenshot of Condition 3 verified is shown below</p>
 <p align="center">Horizontal track pitch = 0.34 um<br>
 Width of standard cell = 8 * 0.34 = 2.72 um
-Capture -93
+<img src="" alt="Capture -93">
 </p>
 <br/>
 <br/>
@@ -668,8 +668,8 @@ Capture -93
   <dd>save sky130_vsdinv.mag</dd>
 </dl>
 <p>Screenshot of tkcon window and terminal with new file created is shown below</p>
-Capture -94
-Capture -95
+<img src="" alt="Capture -94">
+<img src="" alt="Capture -95">
 <br/>
 <br/>
 <br/>
@@ -682,7 +682,7 @@ Capture -95
   <dd>magic -T sky130A.tech sky130_vsdinv.mag &</dd>
 </dl>
 <p>Screenshot of newly saved layout is shown below</p>
-Capture -96
+<img src="" alt="Capture -96">
 <br/>
 <br/>
 <br/>
@@ -693,8 +693,8 @@ Capture -96
   <dd>lef write</dd>
 </dl>
 <p>Screenshot of command run and terminal with new lef file created is shown below</p>
-Capture 97
-Capture -98
+<img src="" alt="Capture -97">
+<img src="" alt="Capture -98">
 <br/>
 <br/>
 <br/>
@@ -702,7 +702,7 @@ Capture -98
 <br/>
 <br/>
 <p>Screenshot of newly created file is shown below</p>
-Capture -99
+<img src="" alt="Capture -99">
 <br/>
 <br/>
 <br/>
@@ -719,8 +719,8 @@ Capture -99
   <dd>ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/</dd>
 </dl>
 <p>Screenshot of commands run is shown below</p>
-Capture -100
-Capture -101
+<img src="" alt="Capture -100">
+<img src="" alt="Capture -101">
 <br/>
 <br/>
 <br/>
@@ -737,8 +737,8 @@ Capture -101
   <dd>set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]</dd>
 </dl>
 <p>Edited config.tcl to include the added lef and change library to ones we added in src directory is shown below</p>
-Capture -102
-Capture -103
+<img src="" alt="Capture -102">
+<img src="" alt="Capture -103">
 <br/>
 <br/>
 <br/>
@@ -766,14 +766,13 @@ Capture -103
   <dd>run_synthesis</dd>
 </dl>
 <p>Screenshot of command run is shown below</p>
-Capture -104
-Capture -105
-Capture -105
-Capture -106
-Capture -107
-Capture -108
-Capture -109
-Capture -110
+<img src="" alt="Capture -104">
+<img src="" alt="Capture -105">
+<img src="" alt="Capture -106">
+<img src="" alt="Capture -107">
+<img src="" alt="Capture -108">
+<img src="" alt="Capture -109">
+<img src="" alt="Capture -110">
 <br/>
 <br/>
 <br/>
@@ -797,14 +796,14 @@ Capture -110
 <br/>
 <h4>7. Remove/reduce the newly introduced violations with the introduction of custom inverter cell by modifying design parameters.</h4>
 <p>Noting down current design values generated before modifying parameters to improve timing is shown below</p>
-Capture -111
-Capture -112
-Capture -113
-Capture -114
-Capture -115
-Capture -116
-Capture -117
-Capture -118
+<img src="" alt="Capture -111">
+<img src="" alt="Capture -112">
+<img src="" alt="Capture -113">
+<img src="" alt="Capture -114">
+<img src="" alt="Capture -115">
+<img src="" alt="Capture -116">
+<img src="" alt="Capture -117">
+<img src="" alt="Capture -118">
 <br/>
 <br/>
 <br/>
@@ -812,16 +811,16 @@ Capture -118
 <br/>
 <br/>
 <p>Screenshot of merged.lef in tmp directory with our custom inverter as macro is shown below</p>
-Capture -124
-Capture -125
+<img src="" alt="Capture -124">
+<img src="" alt="Capture -125">
 <br/>
 <br/>
 <br/>
 <p>Comparing to previously noted run values (before optimization) area has increased and worst negative slack has become 0</p>
-Capture -109
-Capture -110
-Capture -117
-Capture -118
+<img src="" alt="Capture -109">
+<img src="" alt="Capture -110">
+<img src="" alt="Capture -117">
+<img src="" alt="Capture -118">
 <br/>
 <br/>
 <br/>
@@ -832,8 +831,8 @@ Capture -118
   <dd>run_floorplan</dd>
 </dl>
 <p>Screenshots of command run is shown below</p>
-Capture -119
-Capture -120
+<img src="" alt="Capture -119">
+<img src="" alt="Capture -120">
 <br/>
 <br/>
 <br/>
@@ -848,9 +847,9 @@ Capture -120
   <dd>tap_decap_or</dd>
 </dl>
 <p>Screenshots of command run is shown below</p>
-Capture -121
-Capture -122
-Capture -123
+<img src="" alt="Capture -121">
+<img src="" alt="Capture -122">
+<img src="" alt="Capture -123">
 <br/>
 <br/>
 <br/>
@@ -866,8 +865,8 @@ Capture -123
   <dd>run_placement</dd>
 </dl>
 <p>Screenshots of command run is shown below</p>
-Capture -126
-Capture -127
+<img src="" alt="Capture -126">
+<img src="" alt="Capture -127">
 <br/>
 <br/>
 <br/>
@@ -882,17 +881,17 @@ Capture -127
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &</dd>
 </dl>
 <p>Screenshot of terminal is shown below</p>
-Capture -128
+<img src="" alt="Capture -128">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of placement def in magic is shown below</p>
-Capture -129
+<img src="" alt="Capture -129">
 <br/>
 <br/>
 <br/>
 <p>Screenshot of custom inverter inserted in placement def with proper abutment is shown below</p>
-Capture -130
+<img src="" alt="Capture -130">
 <br/>
 <br/>
 <br/>
@@ -902,8 +901,8 @@ Capture -130
   <dd>expand</dd>
 </dl>
 <p>Abutment of power pins with other cell from library clearly visible is shown below</p>
-Capture -131
-Capture -132
+<img src="" alt="Capture -131">
+<img src="" alt="Capture -132">
 <br/>
 <br/>
 <br/>
@@ -923,10 +922,10 @@ Capture -132
   <dd>run_cts</dd>
 </dl>
 <p>Screenshot of cts is shown below</p>
-Capture -133
-Capture -134
-Capture -135
-Capture -136
+<img src="" alt="Capture -133">
+<img src="" alt="Capture -134">
+<img src="" alt="Capture -135">
+<img src="" alt="Capture -136">
 <br/>
 <br/>
 <br/>
@@ -962,13 +961,13 @@ Capture -136
   <dd>exit</dd>
 </dl>
 <p>Screenshots of commands run and timing report generated is shown below</p>
-Capture -137
-Capture -138
-Capture -139
-Capture -140
-Capture -141
-Capture -142
-Capture -143
+<img src="" alt="Capture -137">
+<img src="" alt="Capture -138">
+<img src="" alt="Capture -139">
+<img src="" alt="Capture -140">
+<img src="" alt="Capture -141">
+<img src="" alt="Capture -142">
+<img src="" alt="Capture -143">
 <br/>
 <br/>
 <br/>
@@ -1034,12 +1033,12 @@ Capture -143
   <dd>echo $::env(CTS_CLK_BUFFER_LIST)</dd>
 </dl>
 <p>Screenshots of commands run and timing report generated is shown below</p>
-Capture -144
-Capture -145
-Capture -146
-Capture -147
-Capture -148
-Capture -149
+<img src="" alt="Capture -144">
+<img src="" alt="Capture -145">
+<img src="" alt="Capture -146">
+<img src="" alt="Capture -147">
+<img src="" alt="Capture -148">
+<img src="" alt="Capture -149">
 <br/>
 <br/>
 <br/>
@@ -1105,8 +1104,8 @@ Capture -149
   <dd>gen_pdn</dd>
 </dl>
 <p>Screenshots of power distribution network run is shown below</p>
-Capture -150
-Capture -151
+<img src="" alt="Capture -150">
+<img src="" alt="Capture -151">
 <br/>
 <br/>
 <br/>
@@ -1121,8 +1120,8 @@ Capture -151
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 21-pdn.def &</dd>
 </dl>
 <p>Screenshots of terminal is shown below</p>
-Capture -152
-Capture -153
+<img src="" alt="Capture -152">
+<img src="" alt="Capture -153">
 <br/>
 <br/>
 <br/>
@@ -1130,9 +1129,9 @@ Capture -153
 <br/>
 <br/>
 <p>Screenshots of PDN def is shown below</p>
-Capture -154
-Capture -155
-Capture -156
+<img src="" alt="Capture -154">
+<img src="" alt="Capture -155">
+<img src="" alt="Capture -156">
 <br/>
 <br/>
 <br/>
@@ -1153,17 +1152,17 @@ Capture -156
     <dd>run_routing</dd>
 </dl>
 <p>Screenshots of routing run is shown below</p>
-Capture -157
-Capture -158
-Capture -159
-Capture -160
-Capture -161
-Capture -162
-Capture -163
-Capture -164
-Capture -165
-Capture -166
-Capture -167
+<img src="" alt="Capture -157">
+<img src="" alt="Capture -158">
+<img src="" alt="Capture -159">
+<img src="" alt="Capture -160">
+<img src="" alt="Capture -161">
+<img src="" alt="Capture -162">
+<img src="" alt="Capture -163">
+<img src="" alt="Capture -164">
+<img src="" alt="Capture -165">
+<img src="" alt="Capture -166">
+<img src="" alt="Capture -167">
 <br/>
 <br/>
 <br/>
@@ -1181,15 +1180,15 @@ Capture -167
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &</dd>
 </dl>
 <p>Screenshots of terminal is shown below</p>
-Capture -168
+<img src="" alt="Capture -168">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of routed def is shown below</p>
-Capture -169
-Capture -170
-Capture -171
-Capture -172
+<img src="" alt="Capture -169">
+<img src="" alt="Capture -170">
+<img src="" alt="Capture -171">
+<img src="" alt="Capture -172">
 <br/>
 <br/>
 <br/>
@@ -1200,8 +1199,8 @@ Capture -172
 <br/>
 <br/>
 <p>Screenshot of fast route guide present in openlane/designs/picorv32a/runs/20-12_14-09/tmp/routing directory is shown below</p>
-Capture -173
-Capture -174
+<img src="" alt="Capture -173">
+<img src="" alt="Capture -174">
 <br/>
 <br/>
 <br/>
@@ -1238,10 +1237,10 @@ Capture -174
   <dd>exit</dd>
 </dl>
 <p>Screenshots of commands run and timing report generated is shown below</p>
-Capture -175
-Capture -176
-Capture -177
-Capture -178
+<img src="" alt="Capture -175">
+<img src="" alt="Capture -176">
+<img src="" alt="Capture -177">
+<img src="" alt="Capture -178">
 <br/>
 <br/>
 <br/>
