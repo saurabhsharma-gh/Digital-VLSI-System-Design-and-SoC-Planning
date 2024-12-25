@@ -349,15 +349,15 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken for input to
 
 <b>Incorrectly implemented poly.9 simple rule correction</b>
 <p>Screenshot of poly rules is shown below</p>
-<img src="" alt="Capture -70">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-70.JPG" alt="Capture -70">
 
 <p>Incorrectly implemented poly.9 rule no drc violation even though spacing < 0.48u is shown below</p>
-<img src="" alt="Capture -71">
-<img src="" alt="Capture -72">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-71.JPG" alt="Capture -71">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-72.JPG" alt="Capture -72">
 
 <p>New commands inserted in sky130A.tech file to update drc is shown below</p>
-<img src="" alt="Capture -73">
-<img src="" alt="Capture -74">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-73.JPG" alt="Capture -73">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-74.JPG" alt="Capture -74">
 
 <p>Commands to run in tkcon window after making changes in "sky130A.tech" file are shown below</p>
 <dl>  
@@ -369,30 +369,19 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken for input to
   <dd>drc why</dd>
 </dl>
 <p>Screenshot of magic window with rule implemented is shown below</p>
-<img src="" alt="Capture -75">
-<img src="" alt="Capture -76">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-75.JPG" alt="Capture -75">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-76.JPG" alt="Capture -76">
+
 <b>Incorrectly implemented difftap.2 simple rule correction</b>
 <p>Screenshot of difftap rules is shown below</p>
-<img src="" alt="Capture -77">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-77.JPG" alt="Capture -77">
+
 <p>Incorrectly implemented difftap.2 rule no drc violation even though spacing < 0.42u is shown below</p>
-<img src="" alt="Capture -78">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-78.JPG" alt="Capture -78">
+
 <p>New commands inserted in sky130A.tech file to update drc is shown below</p>
-<img src="" alt="Capture -79">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-79.JPG" alt="Capture -79">
+
 <p>Commands to run in tkcon window after making changes in "sky130A.tech" file are shown below</p>
 <dl>  
   <dd>//Loading updated tech file</dd>
@@ -403,34 +392,20 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken for input to
   <dd>drc why</dd>
 </dl>
 <p>Screenshot of magic window with rule implemented is shown below</p>
-<img src="" alt="Capture -80">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-80.JPG" alt="Capture -80">
+
 <b>Incorrectly implemented nwell.4 complex rule correction</b>
 <p>Screenshot of nwell rules is shown below</p>
-<img src="" alt="Capture -81">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-81.JPG" alt="Capture -81">
+
 <p>Incorrectly implemented nwell.4 rule no drc violation even though no tap present in nwell is shown below</p>
-<img src="" alt="Capture -82">
-<img src="" alt="Capture -83">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-82.JPG" alt="Capture -82">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-83.JPG" alt="Capture -83">
+
 <p>New commands inserted in sky130A.tech file to update drc is shown below</p>
-<img src="" alt="Capture -84">
-<img src="" alt="Capture -85">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-84.JPG" alt="Capture -84">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-85.JPG" alt="Capture -85">
+
 <p>Commands to run in tkcon window after making changes in "sky130A.tech" file are shown below</p>
 <dl>  
   <dd>//Loading updated tech file</dd>
@@ -443,10 +418,8 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken for input to
   <dd>drc why</dd>
 </dl>
 <p>Screenshot of magic window with rule implemented is shown below</p>
-<img src="" alt="Capture -86">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-86.JPG" alt="Capture -86">
+
 
 <h2>Section 4 - Pre-layout timing analysis and importance of good clock tree</h2>
 <h3>Implementation</h3>
@@ -482,20 +455,14 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken for input to
   <dd>magic -T sky130A.tech sky130_inv.mag &</dd>
 </dl>
 <p>Screenshot of sky130_inv.mag is shown below</p>
-<img src="" alt="Capture -87">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-87.JPG" alt="Capture -87">
+
 <p>Open tracks.info file as shown in screenshot below</p>
-<img src="" alt="Capture -88">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-88.JPG" alt="Capture -88">
+
 <p>Screenshot of tracks.info of sky130_fd_sc_hd is shown below</p>
-<img src="" alt="Capture -89">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-89.JPG" alt="Capture -89">
+
 <p>Commands for tkcon window to set grid as tracks of locali layer</p>
 <dl>  
   <dd>//Get syntax for grid command</dd>
@@ -504,31 +471,23 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken for input to
   <dd>grid 0.46um 0.34um 0.23um 0.17um</dd>
 </dl>
 <p>Screenshot of commands run is shown below</p>
-<img src="" alt="Capture -90">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-90.JPG" alt="Capture -90">
+
 <p>Screenshot of Condition 1 verified is shown below</p>
-<img src="" alt="Capture -91">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-91.JPG" alt="Capture -91">
+
 <p>Screenshot of Condition 2 verified is shown below</p>
 <p align="center">Horizontal track pitch = 0.46 um<br>
 Width of standard cell = 3 * 0.46 = 138 um
-<img src="" alt="Capture -92">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-92.JPG" alt="Capture -92">
 </p>
-<br/>
-<br/>
-<br/>
+
 <p>Screenshot of Condition 3 verified is shown below</p>
 <p align="center">Horizontal track pitch = 0.34 um<br>
 Width of standard cell = 8 * 0.34 = 2.72 um
-<img src="" alt="Capture -93">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-93.JPG" alt="Capture -93">
 </p>
-<br/>
-<br/>
-<br/>
+
 <h4>2. Save the finalized layout with custom name and open it.</h4>
 <p>Command for tkcon window to save the layout with custom name is shown below</p>
 <dl>  
@@ -536,24 +495,17 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>save sky130_vsdinv.mag</dd>
 </dl>
 <p>Screenshot of tkcon window and terminal with new file created is shown below</p>
-<img src="" alt="Capture -94">
-<img src="" alt="Capture -95">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-94.JPG" alt="Capture -94">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-95.JPG" alt="Capture -95">
+
 <p>Command to open the newly saved layout is shown below</p>
 <dl>  
   <dd>//Command to open custom inverter layout in magic</dd>
   <dd>magic -T sky130A.tech sky130_vsdinv.mag &</dd>
 </dl>
 <p>Screenshot of newly saved layout is shown below</p>
-<img src="" alt="Capture -96">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-96.JPG" alt="Capture -96">
+
 <h4>3. Generate lef from the layout.</h4>
 <p>Command for tkcon window to write lef is shown below</p>
 <dl>  
@@ -561,19 +513,12 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>lef write</dd>
 </dl>
 <p>Screenshot of command run and terminal with new lef file created is shown below</p>
-<img src="" alt="Capture -97">
-<img src="" alt="Capture -98">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-97.JPG" alt="Capture -97">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-98.JPG" alt="Capture -98">
+
 <p>Screenshot of newly created file is shown below</p>
-<img src="" alt="Capture -99">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-99.JPG" alt="Capture -99">
+
 <h4>4. Copy the newly generated lef and associated required lib files to 'picorv32a' design 'src' directory.</h4>
 <p>Commands to copy necessary files to 'picorv32a' design 'src' directory is shown below</p>
 <dl>  
@@ -587,14 +532,9 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/</dd>
 </dl>
 <p>Screenshot of commands run is shown below</p>
-<img src="" alt="Capture -100">
-<img src="" alt="Capture -101">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-100.JPG" alt="Capture -100">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-101.JPG" alt="Capture -101">
+
 <h4>5. Edit 'config.tcl' to change lib file and add the new extra lef into the openlane flow.</h4>
 <p>Commands to be added to config.tcl to include our custom cell in the openlane flow is shown below</p>
 <dl>  
@@ -605,14 +545,9 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]</dd>
 </dl>
 <p>Edited config.tcl to include the added lef and change library to ones we added in src directory is shown below</p>
-<img src="" alt="Capture -102">
-<img src="" alt="Capture -103">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-102.JPG" alt="Capture -102">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-103.JPG" alt="Capture -103">
+
 <h4>6. Run openlane flow synthesis with newly inserted custom inverter cell.</h4>
 <p>Commands to invoke the OpenLANE flow include new lef and perform synthesis is shown below</p>
 <dl>  
@@ -634,64 +569,35 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>run_synthesis</dd>
 </dl>
 <p>Screenshot of command run is shown below</p>
-<img src="" alt="Capture -104">
-<img src="" alt="Capture -105">
-<img src="" alt="Capture -106">
-<img src="" alt="Capture -107">
-<img src="" alt="Capture -108">
-<img src="" alt="Capture -109">
-<img src="" alt="Capture -110">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-104.JPG" alt="Capture -104">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-105.JPG" alt="Capture -105">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-106.JPG" alt="Capture -106">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-107.JPG" alt="Capture -107">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-108.JPG" alt="Capture -108">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-109.JPG" alt="Capture -109">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-110.JPG" alt="Capture -110">
+
 <h4>7. Remove/reduce the newly introduced violations with the introduction of custom inverter cell by modifying design parameters.</h4>
 <p>Noting down current design values generated before modifying parameters to improve timing is shown below</p>
-<img src="" alt="Capture -111">
-<img src="" alt="Capture -112">
-<img src="" alt="Capture -113">
-<img src="" alt="Capture -114">
-<img src="" alt="Capture -115">
-<img src="" alt="Capture -116">
-<img src="" alt="Capture -117">
-<img src="" alt="Capture -118">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-111.JPG" alt="Capture -111">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-112.JPG" alt="Capture -112">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-113.JPG" alt="Capture -113">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-114.JPG" alt="Capture -114">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-115.JPG" alt="Capture -115">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-116.JPG" alt="Capture -116">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-117.JPG" alt="Capture -117">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-118.JPG" alt="Capture -118">
+
 <p>Screenshot of merged.lef in tmp directory with our custom inverter as macro is shown below</p>
-<img src="" alt="Capture -124">
-<img src="" alt="Capture -125">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-124.JPG" alt="Capture -124">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-125.JPG" alt="Capture -125">
+
 <p>Comparing to previously noted run values (before optimization) area has increased and worst negative slack has become 0</p>
-<img src="" alt="Capture -109">
-<img src="" alt="Capture -110">
-<img src="" alt="Capture -117">
-<img src="" alt="Capture -118">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-109.JPG" alt="Capture -109">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-110.JPG" alt="Capture -110">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-117.JPG" alt="Capture -117">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-118.JPG" alt="Capture -118">
+
 <h4>8. Once synthesis has accepted our custom inverter we can now run floorplan and placement and verify the cell is accepted in PnR flow.</h4>
 <p>Now that our custom inverter is properly accepted in synthesis we can now run floorplan using following command</p>
 <dl>  
@@ -699,14 +605,9 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>run_floorplan</dd>
 </dl>
 <p>Screenshots of command run is shown below</p>
-<img src="" alt="Capture -119">
-<img src="" alt="Capture -120">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-119.JPG" alt="Capture -119">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-120.JPG" alt="Capture -120">
+
 <p>Since we are facing unexpected un-explainable error while using run_floorplan command, we can instead use the following set of commands shown below</p>
 <dl>  
   <dd>//Follwing commands are alltogather sourced in "run_floorplan" command</dd>
@@ -715,32 +616,19 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>tap_decap_or</dd>
 </dl>
 <p>Screenshots of command run is shown below</p>
-<img src="" alt="Capture -121">
-<img src="" alt="Capture -122">
-<img src="" alt="Capture -123">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-121.JPG" alt="Capture -121">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-122.JPG" alt="Capture -122">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-123.JPG" alt="Capture -123">
+
 <p>Now that floorplan is done we can do placement using following command</p>
 <dl>  
   <dd>//Now we are ready to run placement</dd>
   <dd>run_placement</dd>
 </dl>
 <p>Screenshots of command run is shown below</p>
-<img src="" alt="Capture -126">
-<img src="" alt="Capture -127">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-126.JPG" alt="Capture -126">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-127.JPG" alt="Capture -127">
+
 <p>Commands to load placement def in magic in another terminal</p>
 <dl>  
   <dd>//Change directory to path containing generated placement def</dd>
@@ -749,34 +637,23 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &</dd>
 </dl>
 <p>Screenshot of terminal is shown below</p>
-<img src="" alt="Capture -128">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-128.JPG" alt="Capture -128">
+
 <p>Screenshot of placement def in magic is shown below</p>
-<img src="" alt="Capture -129">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-129.JPG" alt="Capture -129">
+
 <p>Screenshot of custom inverter inserted in placement def with proper abutment is shown below</p>
-<img src="" alt="Capture -130">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-130.JPG" alt="Capture -130">
+
 <p>Command for tkcon window to view internal layers of cells</p>
 <dl>  
   <dd>//Command to view internal connectivity layers</dd>
   <dd>expand</dd>
 </dl>
 <p>Abutment of power pins with other cell from library clearly visible is shown below</p>
-<img src="" alt="Capture -131">
-<img src="" alt="Capture -132">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-131.JPG" alt="Capture -131">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-132.JPG" alt="Capture -132">
+
 <h4>9. Do Post-Synthesis timing analysis with OpenSTA tool.</h4>
 <p>Since we are having 0 wns after improved timing run we will not do Post Synthesis timing analysis</p>
 <p>If we want we can do Post Synthesis timing analysis but for that we should do another synthesis i.e. we will not use previous directory created in runs directory of picorv32a directory.</p>
@@ -790,13 +667,11 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>run_cts</dd>
 </dl>
 <p>Screenshot of cts is shown below</p>
-<img src="" alt="Capture -133">
-<img src="" alt="Capture -134">
-<img src="" alt="Capture -135">
-<img src="" alt="Capture -136">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x133.JPG" alt="Capture -133">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x134.JPG" alt="Capture -134">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x135.JPG" alt="Capture -135">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x136.JPG" alt="Capture -136">
+
 <h4>12. Post-CTS OpenROAD timing analysis.</h4>
 <p>Commands to be run in OpenLANE flow to do OpenROAD timing analysis with integrated OpenSTA in OpenROAD</p>
 <dl>  
@@ -829,25 +704,14 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>exit</dd>
 </dl>
 <p>Screenshots of commands run and timing report generated is shown below</p>
-<img src="" alt="Capture -137">
-<img src="" alt="Capture -138">
-<img src="" alt="Capture -139">
-<img src="" alt="Capture -140">
-<img src="" alt="Capture -141">
-<img src="" alt="Capture -142">
-<img src="" alt="Capture -143">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x137.JPG" alt="Capture -137">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x138.JPG" alt="Capture -138">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x139.JPG" alt="Capture -139">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x140.JPG" alt="Capture -140">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x141.JPG" alt="Capture -141">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x142.JPG" alt="Capture -142">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x143.JPG" alt="Capture -143">
+
 <h4>13. Explore post-CTS OpenROAD timing analysis by removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'.</h4>
 <p>Commands to be run in OpenLANE flow to do OpenROAD timing analysis after changing CTS_CLK_BUFFER_LIST</p>
 <dl>  
@@ -901,30 +765,13 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>echo $::env(CTS_CLK_BUFFER_LIST)</dd>
 </dl>
 <p>Screenshots of commands run and timing report generated is shown below</p>
-<img src="" alt="Capture -144">
-<img src="" alt="Capture -145">
-<img src="" alt="Capture -146">
-<img src="" alt="Capture -147">
-<img src="" alt="Capture -148">
-<img src="" alt="Capture -149">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x144.JPG" alt="Capture -144">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x145.JPG" alt="Capture -145">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x146.JPG" alt="Capture -146">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x147.JPG" alt="Capture -147">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x148.JPG" alt="Capture -148">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x149.JPG" alt="Capture -149">
+
 
 <h2>Section 5 - Final steps for RTL2GDS using tritonRoute and openSTA</h2>
 <h3>Implementation</h3>
@@ -972,14 +819,9 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>gen_pdn</dd>
 </dl>
 <p>Screenshots of power distribution network run is shown below</p>
-<img src="" alt="Capture -150">
-<img src="" alt="Capture -151">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x150.JPG" alt="Capture -150">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x151.JPG" alt="Capture -151">
+
 <p>Commands to load PDN def in magic in another terminal</p>
 <dl>  
   <dd>//Change directory to path containing generated PDN def</dd>
@@ -988,27 +830,14 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 21-pdn.def &</dd>
 </dl>
 <p>Screenshots of terminal is shown below</p>
-<img src="" alt="Capture -152">
-<img src="" alt="Capture -153">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x152.JPG" alt="Capture -152">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x153.JPG" alt="Capture -153">
+
 <p>Screenshots of PDN def is shown below</p>
-<img src="" alt="Capture -154">
-<img src="" alt="Capture -155">
-<img src="" alt="Capture -156">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x154.JPG" alt="Capture -154">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x155.JPG" alt="Capture -155">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x156.JPG" alt="Capture -156">
+
 <h4>2. Perfrom detailed routing using TritonRoute and explore the routed layout.</h4>
 <p>Command to perform routing</p>
 <dl>  
@@ -1020,26 +849,18 @@ Width of standard cell = 8 * 0.34 = 2.72 um
     <dd>run_routing</dd>
 </dl>
 <p>Screenshots of routing run is shown below</p>
-<img src="" alt="Capture -157">
-<img src="" alt="Capture -158">
-<img src="" alt="Capture -159">
-<img src="" alt="Capture -160">
-<img src="" alt="Capture -161">
-<img src="" alt="Capture -162">
-<img src="" alt="Capture -163">
-<img src="" alt="Capture -164">
-<img src="" alt="Capture -165">
-<img src="" alt="Capture -166">
-<img src="" alt="Capture -167">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x157.JPG" alt="Capture -157">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x158.JPG" alt="Capture -158">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x159.JPG" alt="Capture -159">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x160.JPG" alt="Capture -160">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x161.JPG" alt="Capture -161">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x162.JPG" alt="Capture -162">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x163.JPG" alt="Capture -163">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x164.JPG" alt="Capture -164">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x165.JPG" alt="Capture -165">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x166.JPG" alt="Capture -166">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x167.JPG" alt="Capture -167">
+
 <p>Commands to load routed def in magic in another terminal</p>
 <dl>  
   <dd>//Change directory to path containing routed def</dd>
@@ -1048,30 +869,18 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &</dd>
 </dl>
 <p>Screenshots of terminal is shown below</p>
-<img src="" alt="Capture -168">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x168.JPG" alt="Capture -168">
+
 <p>Screenshots of routed def is shown below</p>
-<img src="" alt="Capture -169">
-<img src="" alt="Capture -170">
-<img src="" alt="Capture -171">
-<img src="" alt="Capture -172">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x169.JPG" alt="Capture -169">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x170.JPG" alt="Capture -170">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x171.JPG" alt="Capture -171">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x172.JPG" alt="Capture -172">
+
 <p>Screenshot of fast route guide present in openlane/designs/picorv32a/runs/20-12_14-09/tmp/routing directory is shown below</p>
-<img src="" alt="Capture -173">
-<img src="" alt="Capture -174">
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x173.JPG" alt="Capture -173">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x174.JPG" alt="Capture -174">
+
 <h4>3. Post-Route parasitic extraction using SPEF extractor.</h4>
 <p>We don't need to follow this step</p>
 <h4>4. Post-Route OpenSTA timing analysis with the extracted parasitics of the route.</h4>
@@ -1105,20 +914,18 @@ Width of standard cell = 8 * 0.34 = 2.72 um
   <dd>exit</dd>
 </dl>
 <p>Screenshots of commands run and timing report generated is shown below</p>
-<img src="" alt="Capture -175">
-<img src="" alt="Capture -176">
-<img src="" alt="Capture -177">
-<img src="" alt="Capture -178">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x175.JPG" alt="Capture -175">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x176.JPG" alt="Capture -176">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x177.JPG" alt="Capture -177">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x178.JPG" alt="Capture -178">
+
 <h2>Certificate</h2>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
