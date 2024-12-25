@@ -1119,7 +1119,7 @@ Capture -151
   <dd>//Change directory to path containing generated PDN def</dd>
   <dd>cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/20-12_14-09/tmp/floorplan/</dd>
   <dd>//Command to load the PDN def in magic tool</dd>
-  <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &</dd>
+  <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 21-pdn.def &</dd>
 </dl>
 <p>Screenshots of terminal is shown below</p>
 Capture -152
@@ -1177,11 +1177,20 @@ Capture -167
 <p>Commands to load routed def in magic in another terminal</p>
 <dl>  
   <dd>//Change directory to path containing routed def</dd>
-  <dd>cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/</dd>
+  <dd>cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/20-12_14-09/results/routing/</dd>
   <dd>//Command to load the routed def in magic tool</dd>
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &</dd>
 </dl>
+<p>Screenshots of terminal is shown below</p>
+Capture -168
+<br/>
+<br/>
+<br/>
 <p>Screenshots of routed def is shown below</p>
+Capture -169
+Capture -170
+Capture -171
+Capture -172
 <br/>
 <br/>
 <br/>
@@ -1191,7 +1200,9 @@ Capture -167
 <br/>
 <br/>
 <br/>
-<p>Screenshot of fast route guide present in openlane/designs/picorv32a/runs/--------------------------------------------------------------/tmp/routing directory is shown below</p>
+<p>Screenshot of fast route guide present in openlane/designs/picorv32a/runs/20-12_14-09/tmp/routing directory is shown below</p>
+Capture -173
+Capture -174
 <br/>
 <br/>
 <br/>
@@ -1203,15 +1214,15 @@ Capture -167
   <dd>//Command to run OpenROAD tool</dd>
   <dd>openroad</dd>
   <dd>//Reading lef file</dd>
-  <dd>read_lef /openLANE_flow/designs/picorv32a/runs/--------------------------------------/tmp/merged.lef</dd>
+  <dd>read_lef /openLANE_flow/designs/picorv32a/runs/20-12_14-09/tmp/merged.lef</dd>
     <dd>//Reading def file</dd>
-  <dd>read_def /openLANE_flow/designs/picorv32a/runs/----------------------------/results/routing/picorv32a.def</dd>
+  <dd>read_def /openLANE_flow/designs/picorv32a/runs/20-12_14-09/results/routing/picorv32a.def</dd>
     <dd>//Creating an OpenROAD database to work with</dd>
   <dd>write_db pico_route.db</dd>
     <dd>//Loading the created database in OpenROAD</dd>
   <dd>read_db pico_route.db</dd>
     <dd>//Read netlist post CTS</dd>
-  <dd>read_verilog /openLANE_flow/designs/picorv32a/runs/--------------------------------------/results/synthesis/picorv32a.synthesis_preroute.v</dd>
+  <dd>read_verilog /openLANE_flow/designs/picorv32a/runs/20-12_14-09/results/synthesis/picorv32a.synthesis_preroute.v</dd>
     <dd>//Read library for design</dd>
   <dd>read_liberty $::env(LIB_SYNTH_COMPLETE)</dd>
     <dd>//Link design and library</dd>
@@ -1221,13 +1232,17 @@ Capture -167
     <dd>//Setting all cloks as propagated clocks</dd>
   <dd>set_propagated_clock [all_clocks]</dd> 
     <dd>//Read SPEF</dd>
-  <dd>read_spef /openLANE_flow/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.spef</dd>
+  <dd>read_spef /openLANE_flow/designs/picorv32a/runs/20-12_14-09/results/routing/picorv32a.spef</dd>
       <dd>//Generating custom timing report</dd>
   <dd>report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4</dd>
       <dd>//Exit to OpenLANE flow</dd>
   <dd>exit</dd>
 </dl>
 <p>Screenshots of commands run and timing report generated is shown below</p>
+Capture -175
+Capture -176
+Capture -177
+Capture -178
 <br/>
 <br/>
 <br/>
