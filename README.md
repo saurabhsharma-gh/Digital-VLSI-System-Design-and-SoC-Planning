@@ -1,3 +1,6 @@
+<p align="center">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/585101e853b21b8e000c5382b3ad6a1703337a4d/Screenshots/Capture%20-0.JPG" alt="Capture -0">
+</p>
 <h1 align="center">Digital-VLSI-System-Design-and-SoC-Planning</h1>
 2 Week workshop on “Digital VLSI System Design and SoC Planning” by Kunal Ghosh, in which picorv32a processor was designed from RTL to GDS-II in OpenLane flow, which comprises of various open source EDA tools for Synthesis and Physical Design. In the design SkyWater SKY130 PDK was used.
 <h2>Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK</h2>
@@ -592,9 +595,15 @@ Width of standard cell = 8 * 0.34 = 2.72 um
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-124.JPG" alt="Capture -124">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-125.JPG" alt="Capture -125">
 
-<p>Comparing to previously noted run values (before optimization) area has increased and worst negative slack has become 0</p>
+<p>Comparing to previously noted run values (before and after optimization) it is observed that area has increased and worst negative slack has become 0</p>
+<p align="center">
+Before Optimization
+</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-109.JPG" alt="Capture -109">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-110.JPG" alt="Capture -110">
+<p align="center">
+After Optimization
+</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-117.JPG" alt="Capture -117">
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-118.JPG" alt="Capture -118">
 
@@ -920,6 +929,9 @@ Width of standard cell = 8 * 0.34 = 2.72 um
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/78eddd78b009df6049ae4c08a09d0257a35803d4/Screenshots/Capture%20-x178.JPG" alt="Capture -178">
 
 <h2>Certificate</h2>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
