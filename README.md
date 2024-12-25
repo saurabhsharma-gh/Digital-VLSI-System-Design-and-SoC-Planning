@@ -924,6 +924,10 @@ Capture -132
   <dd>run_cts</dd>
 </dl>
 <p>Screenshot of cts is shown below</p>
+Capture -133
+Capture -134
+Capture -135
+Capture -136
 <br/>
 <br/>
 <br/>
@@ -933,16 +937,16 @@ Capture -132
   <dd>//Command to run OpenROAD tool</dd>
   <dd>openroad</dd>
   <dd>//Reading lef file</dd>
-  <dd>read_lef /openLANE_flow/designs/picorv32a/runs/---------------------------------------------------------------------------------------/tmp/merged.lef</dd>
+  <dd>read_lef /openLANE_flow/designs/picorv32a/runs/20-12_14-09/tmp/merged.lef</dd>
   <dd>Command to run cts</dd>
   <dd>//Reading def file</dd>
-  <dd>read_def /openLANE_flow/designs/picorv32a/runs/---------------------------------------------------------------------/results/cts/picorv32a.cts.def</dd>
+  <dd>read_def /openLANE_flow/designs/picorv32a/runs/20-12_14-09/results/cts/picorv32a.cts.def</dd>
   <dd>//Creating an OpenROAD database to work with</dd>
   <dd>write_db pico_cts.db</dd>
   <dd>//Loading the created database in OpenROAD</dd>
   <dd>read_db pico_cts.db</dd>
   <dd>//Read netlist post CTS</dd>
-  <dd>read_verilog /openLANE_flow/designs/picorv32a/runs/----------------------------------------------------/results/synthesis/picorv32a.synthesis_cts.v</dd>
+  <dd>read_verilog /openLANE_flow/designs/picorv32a/runs/20-12_14-09/results/synthesis/picorv32a.synthesis_cts.v</dd>
   <dd>//Read library for design</dd>
   <dd>read_liberty $::env(LIB_SYNTH_COMPLETE)</dd>
   <dd>//Link design and library</dd>
@@ -959,6 +963,13 @@ Capture -132
   <dd>exit</dd>
 </dl>
 <p>Screenshots of commands run and timing report generated is shown below</p>
+Capture -137
+Capture -138
+Capture -139
+Capture -140
+Capture -141
+Capture -142
+Capture -143
 <br/>
 <br/>
 <br/>
@@ -983,7 +994,7 @@ Capture -132
     <dd>//Checking current value of 'CURRENT_DEF'</dd>
   <dd>echo $::env(CURRENT_DEF)</dd>
     <dd>//Setting def as placement def</dd>
-  <dd>set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/------------------------------------------/results/placement/picorv32a.placement.def</dd>
+  <dd>set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/20-12_14-09/results/placement/picorv32a.placement.def</dd>
     <dd>//Run CTS again</dd>
   <dd>run_cts</dd>
     <dd>//Checking current value of 'CTS_CLK_BUFFER_LIST'</dd>
@@ -991,15 +1002,15 @@ Capture -132
     <dd>//Command to run OpenROAD tool</dd>
   <dd>openroad</dd>
     <dd>//Reading lef file</dd>
-  <dd>read_lef /openLANE_flow/designs/picorv32a/runs/-----------------------------------------------------------------------------------/tmp/merged.lef</dd>
+  <dd>read_lef /openLANE_flow/designs/picorv32a/runs/20-12_14-09/tmp/merged.lef</dd>
     <dd>//Reading def file</dd>
-  <dd>read_def /openLANE_flow/designs/picorv32a/runs/---------------------------------------------------------------------/results/cts/picorv32a.cts.def</dd>
+  <dd>read_def /openLANE_flow/designs/picorv32a/runs/20-12_14-09/results/cts/picorv32a.cts.def</dd>
     <dd>//Creating an OpenROAD database to work with</dd>
   <dd>write_db pico_cts1.db</dd>
     <dd>//Loading the created database in OpenROAD</dd>
   <dd>read_db pico_cts.db</dd>
     <dd>//Read netlist post CTS</dd>
-  <dd>read_verilog /openLANE_flow/designs/picorv32a/runs/------------------------------------------------------/results/synthesis/picorv32a.synthesis_cts.v</dd>
+  <dd>read_verilog /openLANE_flow/designs/picorv32a/runs/20-12_14-09/results/synthesis/picorv32a.synthesis_cts.v</dd>
     <dd>//Read library for design</dd>
   <dd>read_liberty $::env(LIB_SYNTH_COMPLETE)</dd>
     <dd>//Link design and library</dd>
@@ -1024,6 +1035,12 @@ Capture -132
   <dd>echo $::env(CTS_CLK_BUFFER_LIST)</dd>
 </dl>
 <p>Screenshots of commands run and timing report generated is shown below</p>
+Capture -144
+Capture -145
+Capture -146
+Capture -147
+Capture -148
+Capture -149
 <br/>
 <br/>
 <br/>
@@ -1089,6 +1106,8 @@ Capture -132
   <dd>gen_pdn</dd>
 </dl>
 <p>Screenshots of power distribution network run is shown below</p>
+Capture -150
+Capture -151
 <br/>
 <br/>
 <br/>
@@ -1098,11 +1117,23 @@ Capture -132
 <p>Commands to load PDN def in magic in another terminal</p>
 <dl>  
   <dd>//Change directory to path containing generated PDN def</dd>
-  <dd>cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/-----------------------------------------------------------------/tmp/floorplan/</dd>
+  <dd>cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/20-12_14-09/tmp/floorplan/</dd>
   <dd>//Command to load the PDN def in magic tool</dd>
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &</dd>
 </dl>
+<p>Screenshots of terminal is shown below</p>
+Capture -152
+Capture -153
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <p>Screenshots of PDN def is shown below</p>
+Capture -154
+Capture -155
+Capture -156
 <br/>
 <br/>
 <br/>
@@ -1123,6 +1154,17 @@ Capture -132
     <dd>run_routing</dd>
 </dl>
 <p>Screenshots of routing run is shown below</p>
+Capture -157
+Capture -158
+Capture -159
+Capture -160
+Capture -161
+Capture -162
+Capture -163
+Capture -164
+Capture -165
+Capture -166
+Capture -167
 <br/>
 <br/>
 <br/>
