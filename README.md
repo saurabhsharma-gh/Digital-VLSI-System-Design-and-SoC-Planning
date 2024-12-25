@@ -31,24 +31,23 @@ Percentage of DFF's = Flop Ratio * 100
 </dl>
 <p>The screenshots of above steps and changes in picorv32a directory is shown below</p>
 <img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-1.JPG" alt="Capture -1">
-Capture -1
-Capture -2
-Capture -3
-Capture -4
-Capture -5
-Capture -6
-Capture -7
-Capture -8
-Capture -13
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-2.JPG" alt="Capture -2">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-3.JPG" alt="Capture -3">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-4.JPG" alt="Capture -4">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-5.JPG" alt="Capture -5">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-6.JPG" alt="Capture -6">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-7.JPG" alt="Capture -7">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-8.JPG" alt="Capture -8">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-13.JPG" alt="Capture -13">
 <br/>
 <br/>
 <br/>
 <h4>2. Calculate the flop ratio.</h4>
 <p>Screenshots of synthesis statistics report file with required values highlighted is shown below</p>
-Capture -9
-Capture -10
-Capture -11
-Capture -12
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-9.JPG" alt="Capture -9">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-10.JPG" alt="Capture -10">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-11.JPG" alt="Capture -11">
+<img src="https://github.com/saurabhsharma-gh/Digital-VLSI-System-Design-and-SoC-Planning-Images/blob/483d7af70c82a47b1a79e315dd89ff2a9db47392/Screenshots/Capture%20-12.JPG" alt="Capture -12">
 <br/>
 <br/>
 <br/>
@@ -78,14 +77,14 @@ Area of Die in microns = Die width in microns * Die height in microns
   <dd>run_floorplan</dd>
 </dl>
 <p>Screenshots of floorplan run is shown below</p>
-Capture -14
-Capture -15
+<img src="" alt="Capture -14">
+<img src="" alt="Capture -15">
 <br/>
 <br/>
 <br/>
 <h4>2. Calculate the die area in microns from the values in floorplan def.</h4>
 <p>Screenshots of contents of floorplan def is shown below</p>
-Capture -16
+<img src="" alt="Capture -16">
 <br/>
 <br/>
 <br/>
@@ -108,38 +107,38 @@ Distance in microns = Value in unit distance / 1000<br/>
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &</dd>
 </dl>
 <p>Screenshots of terminal is shown below</p>
-Capture -17
+<img src="" alt="Capture -17">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of floorplan def in magic is shown below</p>
-Capture -18
+<img src="" alt="Capture -18">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of Equidistant placement of ports is shown below</p>
-Capture -19
+<img src="" alt="Capture -19">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of Port layer as set through config.tcl is shown below</p>
-Capture -20
-Capture -21
+<img src="" alt="Capture -20">
+<img src="" alt="Capture -21">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of Decap Cells and Tap Cells is shown below</p>
-Capture -22
+<img src="" alt="Capture -22">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of Diogonally equidistant Tap cells is shown below</p>
-Capture -23
+<img src="" alt="Capture -23">
 <br/>
 <br/>
 <br/>
 <p>Screenshots of Unplaced standard cells at the origin is shown below</p>
-Capture -24
+<img src="" alt="Capture -24">
 <br/>
 <br/>
 <br/>
@@ -150,8 +149,8 @@ Capture -24
   <dd>run_placement</dd>
 </dl>
 <p>Screenshots of placement run is shown below</p>
-Capture -25
-Capture -26
+<img src="" alt="Capture -25">
+<img src="" alt="Capture -26">
 <br/>
 <br/>
 <br/>
@@ -164,13 +163,13 @@ Capture -26
   <dd>magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &</dd>
 </dl>
 <p>Screenshots of floorplan def in magic is shown below</p>
-Capture -27
-capture -28
+<img src="" alt="Capture -27">
+<img src="" alt="Capture -28">
 <br/>
 <br/>
 <br/>
 <p>Standard cells legally placed is shown below</p>
-Capture -29
+<img src="" alt="Capture -29">
 <br/>
 <br/>
 <br/>
